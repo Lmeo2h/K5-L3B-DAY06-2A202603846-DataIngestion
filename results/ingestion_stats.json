@@ -1,0 +1,70 @@
+{
+  "embedding_model": {
+    "provider": "HuggingFace / sentence-transformers (local)",
+    "model_name": "BAAI/bge-m3",
+    "dimension": 1024,
+    "normalize_embeddings": true,
+    "model_load_seconds": 9.105,
+    "cost_usd": 0.0
+  },
+  "vector_store": {
+    "engine": "ChromaDB",
+    "version": "1.5.9",
+    "path": "data/chroma_db",
+    "metric": "cosine",
+    "search_type": "HNSW approximate nearest neighbor (cosine)"
+  },
+  "strategies": {
+    "A": {
+      "chunk_count": 196,
+      "char_length_min": 52,
+      "char_length_max": 500,
+      "char_length_avg": 428.55,
+      "total_chars": 83995,
+      "estimated_tokens": 20999,
+      "ingest_time_seconds": 466.146,
+      "estimated_cost_usd": 0.0,
+      "idempotency_check": {
+        "collection_name": "strategy_a",
+        "stale_deleted": 0,
+        "before_reingest_count": 196,
+        "after_reingest_count": 196,
+        "no_duplicates": true
+      }
+    },
+    "B": {
+      "chunk_count": 165,
+      "char_length_min": 36,
+      "char_length_max": 798,
+      "char_length_avg": 468.08,
+      "total_chars": 77233,
+      "estimated_tokens": 19308,
+      "ingest_time_seconds": 413.137,
+      "estimated_cost_usd": 0.0,
+      "idempotency_check": {
+        "collection_name": "strategy_b",
+        "stale_deleted": 0,
+        "before_reingest_count": 165,
+        "after_reingest_count": 165,
+        "no_duplicates": true
+      }
+    },
+    "C": {
+      "chunk_count": 165,
+      "char_length_min": 36,
+      "char_length_max": 798,
+      "char_length_avg": 468.08,
+      "total_chars": 77233,
+      "estimated_tokens": 19308,
+      "ingest_time_seconds": 2.344,
+      "estimated_cost_usd": 0.0,
+      "idempotency_check": {
+        "collection_name": "strategy_c",
+        "stale_deleted": 0,
+        "before_reingest_count": 165,
+        "after_reingest_count": 165,
+        "no_duplicates": true
+      }
+    }
+  }
+}

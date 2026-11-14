@@ -1,0 +1,199 @@
+{
+  "strategies": {
+    "A": {
+      "dev": {
+        "n_questions": 15,
+        "hit_at_1": {
+          "hits": 9,
+          "total": 15,
+          "ratio_str": "9/15",
+          "percent": 60.0
+        },
+        "evidence_hit_at_3": {
+          "hits": 13,
+          "total": 15,
+          "ratio_str": "13/15",
+          "percent": 86.67
+        },
+        "filter_compliance": {
+          "compliant": 0,
+          "total": 0,
+          "ratio_str": "N/A",
+          "percent": null
+        }
+      },
+      "test": {
+        "n_questions": 5,
+        "hit_at_1": {
+          "hits": 4,
+          "total": 5,
+          "ratio_str": "4/5",
+          "percent": 80.0
+        },
+        "evidence_hit_at_3": {
+          "hits": 4,
+          "total": 5,
+          "ratio_str": "4/5",
+          "percent": 80.0
+        },
+        "filter_compliance": {
+          "compliant": 0,
+          "total": 0,
+          "ratio_str": "N/A",
+          "percent": null
+        }
+      },
+      "overall": {
+        "n_questions": 20,
+        "hit_at_1": {
+          "hits": 13,
+          "total": 20,
+          "ratio_str": "13/20",
+          "percent": 65.0
+        },
+        "evidence_hit_at_3": {
+          "hits": 17,
+          "total": 20,
+          "ratio_str": "17/20",
+          "percent": 85.0
+        },
+        "filter_compliance": {
+          "compliant": 0,
+          "total": 0,
+          "ratio_str": "N/A",
+          "percent": null
+        }
+      }
+    },
+    "B": {
+      "dev": {
+        "n_questions": 15,
+        "hit_at_1": {
+          "hits": 11,
+          "total": 15,
+          "ratio_str": "11/15",
+          "percent": 73.33
+        },
+        "evidence_hit_at_3": {
+          "hits": 14,
+          "total": 15,
+          "ratio_str": "14/15",
+          "percent": 93.33
+        },
+        "filter_compliance": {
+          "compliant": 0,
+          "total": 0,
+          "ratio_str": "N/A",
+          "percent": null
+        }
+      },
+      "test": {
+        "n_questions": 5,
+        "hit_at_1": {
+          "hits": 5,
+          "total": 5,
+          "ratio_str": "5/5",
+          "percent": 100.0
+        },
+        "evidence_hit_at_3": {
+          "hits": 5,
+          "total": 5,
+          "ratio_str": "5/5",
+          "percent": 100.0
+        },
+        "filter_compliance": {
+          "compliant": 0,
+          "total": 0,
+          "ratio_str": "N/A",
+          "percent": null
+        }
+      },
+      "overall": {
+        "n_questions": 20,
+        "hit_at_1": {
+          "hits": 16,
+          "total": 20,
+          "ratio_str": "16/20",
+          "percent": 80.0
+        },
+        "evidence_hit_at_3": {
+          "hits": 19,
+          "total": 20,
+          "ratio_str": "19/20",
+          "percent": 95.0
+        },
+        "filter_compliance": {
+          "compliant": 0,
+          "total": 0,
+          "ratio_str": "N/A",
+          "percent": null
+        }
+      }
+    },
+    "C": {
+      "dev": {
+        "n_questions": 15,
+        "hit_at_1": {
+          "hits": 11,
+          "total": 15,
+          "ratio_str": "11/15",
+          "percent": 73.33
+        },
+        "evidence_hit_at_3": {
+          "hits": 14,
+          "total": 15,
+          "ratio_str": "14/15",
+          "percent": 93.33
+        },
+        "filter_compliance": {
+          "compliant": 3,
+          "total": 3,
+          "ratio_str": "3/3",
+          "percent": 100.0
+        }
+      },
+      "test": {
+        "n_questions": 5,
+        "hit_at_1": {
+          "hits": 5,
+          "total": 5,
+          "ratio_str": "5/5",
+          "percent": 100.0
+        },
+        "evidence_hit_at_3": {
+          "hits": 5,
+          "total": 5,
+          "ratio_str": "5/5",
+          "percent": 100.0
+        },
+        "filter_compliance": {
+          "compliant": 2,
+          "total": 2,
+          "ratio_str": "2/2",
+          "percent": 100.0
+        }
+      },
+      "overall": {
+        "n_questions": 20,
+        "hit_at_1": {
+          "hits": 16,
+          "total": 20,
+          "ratio_str": "16/20",
+          "percent": 80.0
+        },
+        "evidence_hit_at_3": {
+          "hits": 19,
+          "total": 20,
+          "ratio_str": "19/20",
+          "percent": 95.0
+        },
+        "filter_compliance": {
+          "compliant": 5,
+          "total": 5,
+          "ratio_str": "5/5",
+          "percent": 100.0
+        }
+      }
+    }
+  }
+}

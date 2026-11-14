@@ -1,0 +1,1382 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "question_type": "truc_tiep",
+    "question": "Theo tài liệu, những yếu tố nào của prompt ảnh hưởng đến hiệu quả phản hồi của mô hình ngôn ngữ lớn?",
+    "expected_answer": "Mô hình sử dụng, dữ liệu huấn luyện của mô hình, cấu hình mô hình, cách chọn từ ngữ, văn phong và giọng điệu, cấu trúc và ngữ cảnh.",
+    "filter_applied": null,
+    "gold_source_id": "google-prompt-engineering-2025",
+    "gold_page": [
+      6
+    ],
+    "evidence_quote": "Many aspects of your prompt affect its efficacy: the model you use, the model’s training data, the model configurations, your word-choice, style and tone, structure, and context all matter.",
+    "hit_at_1": false,
+    "hit_at_3": false,
+    "filter_compliant": null,
+    "top_3": [
+      {
+        "rank": 1,
+        "chunk_id": "google-prompt-engineering-2025_A_p006_c0000_9bbd7b0a0c",
+        "cosine_score": 0.664486,
+        "distance": 0.335514,
+        "metadata": {
+          "chunk_index": 0,
+          "document_id": "google-prompt-engineering-2025",
+          "year": 2025,
+          "strategy": "A",
+          "page": 6,
+          "section": "Introduction",
+          "source": "data/raw/Prompt Engineering.pdf"
+        },
+        "text": "Introduction\nWhen thinking about a large language model input and output, a text prompt (sometimes\naccompanied by other modalities such as image prompts) is the input the model uses\nto predict a specific output. You don’t need to be a data scientist or a machine learning\nengineer – everyone can write a prompt. However, crafting the most effective prompt can be\ncomplicated. Many aspects of your prompt affect its efficacy: the model you use, the model’s\ntraining data, the model configurations, you",
+        "is_hit": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "google-prompt-engineering-2025_A_p029_c0002_3cacd6e1a4",
+        "cosine_score": 0.600982,
+        "distance": 0.399018,
+        "metadata": {
+          "document_id": "google-prompt-engineering-2025",
+          "page": 29,
+          "year": 2025,
+          "section": "Prompting Techniques",
+          "strategy": "A",
+          "chunk_index": 2,
+          "source": "data/raw/Prompt Engineering.pdf"
+        },
+        "text": "s between different LLMs than if your prompt\ndoes not use reasoning chains. Of course there are also disadvantages, but they are\nsomewhat intuitive.\nThe LLM response includes the chain of thought reasoning, which means more output\ntokens, which means predictions cost more money and take longer.\nTo explain the following example in Table 11, let’s first try to create a prompt that is not using\nCoT prompting to showcase the flaws of a large language model.\nPrompt\nWhen I was 3 years old, my partner",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "google-prompt-engineering-2025_A_p007_c0003_8c9f005323",
+        "cosine_score": 0.597788,
+        "distance": 0.402212,
+        "metadata": {
+          "section": "Introduction",
+          "source": "data/raw/Prompt Engineering.pdf",
+          "page": 7,
+          "document_id": "google-prompt-engineering-2025",
+          "strategy": "A",
+          "year": 2025,
+          "chunk_index": 3
+        },
+        "text": "t,\noptimizing prompt length, and evaluating a prompt’s writing style and structure in relation\nto the task. In the context of natural language processing and LLMs, a prompt is an input\nprovided to the model to generate a response or prediction.",
+        "is_hit": false
+      }
+    ]
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "question_type": "truc_tiep",
+    "question": "Việc giảm giới hạn độ dài đầu ra (output length) có làm mô hình viết súc tích hơn về mặt văn phong không?",
+    "expected_answer": "Không, việc giảm output length chỉ khiến mô hình dừng dự đoán thêm token khi chạm giới hạn chứ không làm câu văn súc tích hơn về mặt phong cách.",
+    "filter_applied": null,
+    "gold_source_id": "google-prompt-engineering-2025",
+    "gold_page": [
+      9
+    ],
+    "evidence_quote": "Reducing the output length of the LLM doesn’t cause the LLM to become more stylistically or textually succinct in the output it creates, it just causes the LLM to stop predicting more tokens once the limit is reached.",
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "filter_compliant": null,
+    "top_3": [
+      {
+        "rank": 1,
+        "chunk_id": "google-prompt-engineering-2025_A_p009_c0000_efd270b8d2",
+        "cosine_score": 0.632202,
+        "distance": 0.367798,
+        "metadata": {
+          "section": "LLM Output Configuration",
+          "strategy": "A",
+          "year": 2025,
+          "source": "data/raw/Prompt Engineering.pdf",
+          "page": 9,
+          "document_id": "google-prompt-engineering-2025",
+          "chunk_index": 0
+        },
+        "text": "Reducing the output length of the LLM doesn’t cause the LLM to become more stylistically\nor textually succinct in the output it creates, it just causes the LLM to stop predicting more\ntokens once the limit is reached. If your needs require a short output length, you’ll also\npossibly need to engineer your prompt to accommodate.\nOutput length restriction is especially important for some LLM prompting techniques, like\nReAct, where the LLM will keep emitting useless tokens after the response you wan",
+        "is_hit": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "google-prompt-engineering-2025_A_p056_c0000_4097ac3bff",
+        "cosine_score": 0.539764,
+        "distance": 0.460236,
+        "metadata": {
+          "document_id": "google-prompt-engineering-2025",
+          "strategy": "A",
+          "source": "data/raw/Prompt Engineering.pdf",
+          "section": "Best Practices",
+          "chunk_index": 0,
+          "page": 56,
+          "year": 2025
+        },
+        "text": "Be specific about the output\nBe specific about the desired output. A concise instruction might not guide the LLM enough\nor could be too generic. Providing specific details in the prompt (through system or context\nprompting) can help the model to focus on what’s relevant, improving the overall accuracy.\nExamples:\nDO:\nGenerate a 3 paragraph blog post about the top 5 video game consoles.\nThe blog post should be informative and engaging, and it should be\nwritten in a conversational style.\nDO NOT:\nGe",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "google-prompt-engineering-2025_A_p056_c0001_3018053726",
+        "cosine_score": 0.534007,
+        "distance": 0.465993,
+        "metadata": {
+          "source": "data/raw/Prompt Engineering.pdf",
+          "year": 2025,
+          "chunk_index": 1,
+          "page": 56,
+          "section": "Best Practices",
+          "document_id": "google-prompt-engineering-2025",
+          "strategy": "A"
+        },
+        "text": "d be\nwritten in a conversational style.\nDO NOT:\nGenerate a blog post about video game consoles.\nUse Instructions over Constraints\nInstructions and constraints are used in prompting to guide the output of a LLM.\n• An instruction provides explicit instructions on the desired format, style, or content of the\nresponse. It guides the model on what the model should do or produce.\n• A constraint is a set of limitations or boundaries on the response. It limits what the model\nshould not do or avoid.",
+        "is_hit": false
+      }
+    ]
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "question_type": "dieu_kien_ngoai_le",
+    "question": "Khi đặt temperature bằng 0, mô hình có luôn trả về cùng một kết quả trong mọi trường hợp không, và ngoại lệ nào được nêu?",
+    "expected_answer": "Không hoàn toàn; nếu hai token có xác suất dự đoán cao nhất bằng nhau, kết quả có thể khác nhau tùy theo cách cài đặt cơ chế tiebreaking.",
+    "filter_applied": null,
+    "gold_source_id": "google-prompt-engineering-2025",
+    "gold_page": [
+      10
+    ],
+    "evidence_quote": "deterministic: the highest probability token is always selected (though note that if two tokens have the same highest predicted probability, depending on how tiebreaking is implemented you may not always get the same output with temperature 0).",
+    "hit_at_1": false,
+    "hit_at_3": false,
+    "filter_compliant": null,
+    "top_3": [
+      {
+        "rank": 1,
+        "chunk_id": "google-prompt-engineering-2025_A_p009_c0003_928d41786e",
+        "cosine_score": 0.627387,
+        "distance": 0.372613,
+        "metadata": {
+          "chunk_index": 3,
+          "page": 9,
+          "year": 2025,
+          "section": "LLM Output Configuration",
+          "source": "data/raw/Prompt Engineering.pdf",
+          "strategy": "A",
+          "document_id": "google-prompt-engineering-2025"
+        },
+        "text": "or unexpected results. A temperature of 0 (greedy decoding) is",
+        "is_hit": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "google-prompt-engineering-2025_A_p035_c0004_f1de7abd7b",
+        "cosine_score": 0.599923,
+        "distance": 0.400077,
+        "metadata": {
+          "page": 35,
+          "year": 2025,
+          "chunk_index": 4,
+          "document_id": "google-prompt-engineering-2025",
+          "strategy": "A",
+          "section": "Prompting Techniques",
+          "source": "data/raw/Prompt Engineering.pdf"
+        },
+        "text": "epending on the model that you are using and the temperature configuration, it might\nreturn “IMPORTANT” or “NOT IMPORTANT”.",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "google-prompt-engineering-2025_A_p012_c0000_771d879bba",
+        "cosine_score": 0.558487,
+        "distance": 0.441513,
+        "metadata": {
+          "chunk_index": 0,
+          "page": 12,
+          "document_id": "google-prompt-engineering-2025",
+          "year": 2025,
+          "source": "data/raw/Prompt Engineering.pdf",
+          "section": "LLM Output Configuration",
+          "strategy": "A"
+        },
+        "text": "• If you set temperature to 0, top-K and top-P become irrelevant–the most probable\ntoken becomes the next token predicted. If you set temperature extremely high (above\n1–generally into the 10s), temperature becomes irrelevant and whatever tokens make\nit through the top-K and/or top-P criteria are then randomly sampled to choose a next\npredicted token.\n• If you set top-K to 1, temperature and top-P become irrelevant. Only one token passes the\ntop-K criteria, and that token is the next predicted t",
+        "is_hit": false
+      }
+    ]
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "question_type": "dieu_kien_ngoai_le",
+    "question": "Khi thiết lập temperature bằng 0, vai trò của top-K và top-P trong quá trình lấy mẫu sẽ thay đổi như thế nào?",
+    "expected_answer": "Top-K và top-P trở nên không còn tác dụng (irrelevant) vì token có xác suất cao nhất luôn được chọn làm token tiếp theo.",
+    "filter_applied": null,
+    "gold_source_id": "google-prompt-engineering-2025",
+    "gold_page": [
+      12
+    ],
+    "evidence_quote": "If you set temperature to 0, top-K and top-P become irrelevant–the most probable token becomes the next token predicted.",
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "filter_compliant": null,
+    "top_3": [
+      {
+        "rank": 1,
+        "chunk_id": "google-prompt-engineering-2025_A_p012_c0000_771d879bba",
+        "cosine_score": 0.690647,
+        "distance": 0.309353,
+        "metadata": {
+          "section": "LLM Output Configuration",
+          "strategy": "A",
+          "chunk_index": 0,
+          "year": 2025,
+          "source": "data/raw/Prompt Engineering.pdf",
+          "page": 12,
+          "document_id": "google-prompt-engineering-2025"
+        },
+        "text": "• If you set temperature to 0, top-K and top-P become irrelevant–the most probable\ntoken becomes the next token predicted. If you set temperature extremely high (above\n1–generally into the 10s), temperature becomes irrelevant and whatever tokens make\nit through the top-K and/or top-P criteria are then randomly sampled to choose a next\npredicted token.\n• If you set top-K to 1, temperature and top-P become irrelevant. Only one token passes the\ntop-K criteria, and that token is the next predicted t",
+        "is_hit": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "google-prompt-engineering-2025_A_p011_c0002_6d0ba9d7e8",
+        "cosine_score": 0.64736,
+        "distance": 0.35264,
+        "metadata": {
+          "chunk_index": 2,
+          "document_id": "google-prompt-engineering-2025",
+          "page": 11,
+          "source": "data/raw/Prompt Engineering.pdf",
+          "strategy": "A",
+          "year": 2025,
+          "section": "LLM Output Configuration"
+        },
+        "text": "tokens that passed the top-K and top-P criteria. If\nonly top-K or top-P is available, the behavior is the same but only the one top-K or P setting\nis used.\nIf temperature is not available, whatever tokens meet the top-K and/or top-P criteria are then\nrandomly selected from to produce a single next predicted token.\nAt extreme settings of one sampling configuration value, that one sampling setting either\ncancels out other configuration settings or becomes irrelevant.",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "google-prompt-engineering-2025_A_p012_c0001_c40be8e218",
+        "cosine_score": 0.64464,
+        "distance": 0.35536,
+        "metadata": {
+          "strategy": "A",
+          "page": 12,
+          "section": "LLM Output Configuration",
+          "source": "data/raw/Prompt Engineering.pdf",
+          "year": 2025,
+          "chunk_index": 1,
+          "document_id": "google-prompt-engineering-2025"
+        },
+        "text": "K criteria, and that token is the next predicted token. If you set top-K extremely high,\nlike to the size of the LLM’s vocabulary, any token with a nonzero probability of being the\nnext token will meet the top-K criteria and none are selected out.\n• If you set top-P to 0 (or a very small value), most LLM sampling implementations will then\nonly consider the most probable token to meet the top-P criteria, making temperature and\ntop-K irrelevant. If you set top-P to 1, any token with a nonzero prob",
+        "is_hit": false
+      }
+    ]
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "question_type": "dien_dat_lai",
+    "question": "Bộ tham số khởi đầu cân bằng giữa tính mạch lạc và mức độ sáng tạo vừa phải được khuyến nghị trong tài liệu gồm những giá trị nào?",
+    "expected_answer": "Temperature 0.2, top-P 0.95 và top-K 30.",
+    "filter_applied": null,
+    "gold_source_id": "google-prompt-engineering-2025",
+    "gold_page": [
+      12
+    ],
+    "evidence_quote": "As a general starting point, a temperature of .2, top-P of .95, and top-K of 30 will give you relatively coherent results that can be creative but not excessively so.",
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "filter_compliant": null,
+    "top_3": [
+      {
+        "rank": 1,
+        "chunk_id": "google-prompt-engineering-2025_A_p012_c0002_5364bea7be",
+        "cosine_score": 0.507803,
+        "distance": 0.492197,
+        "metadata": {
+          "document_id": "google-prompt-engineering-2025",
+          "section": "LLM Output Configuration",
+          "page": 12,
+          "year": 2025,
+          "source": "data/raw/Prompt Engineering.pdf",
+          "chunk_index": 2,
+          "strategy": "A"
+        },
+        "text": "you set top-P to 1, any token with a nonzero probability of being the\nnext token will meet the top-P criteria, and none are selected out.\nAs a general starting point, a temperature of .2, top-P of .95, and top-K of 30 will give you\nrelatively coherent results that can be creative but not excessively so. If you want especially\ncreative results, try starting with a temperature of .9, top-P of .99, and top-K of 40. And if you\nwant less creative results, try starting with a temperature of .1, top-P",
+        "is_hit": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "google-prompt-engineering-2025_A_p014_c0001_cadd06055c",
+        "cosine_score": 0.507464,
+        "distance": 0.492536,
+        "metadata": {
+          "section": "Prompting Techniques",
+          "chunk_index": 1,
+          "source": "data/raw/Prompt Engineering.pdf",
+          "year": 2025,
+          "document_id": "google-prompt-engineering-2025",
+          "page": 14,
+          "strategy": "A"
+        },
+        "text": "able\nformat, the importance of tracking prompt engineering work, and the prompt development\nprocess is in the Best Practices section later in this chapter (“Document the various prompt\nattempts”).\nThe model temperature should be set to a low number, since no creativity is needed, and we\nuse the gemini-pro default top-K and top-P values, which effectively disable both settings\n(see ‘LLM Output Configuration’ above). Pay attention to the generated output. The words\ndisturbing and masterpiece shoul",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "google-prompt-engineering-2025_A_p017_c0002_66d2f2733e",
+        "cosine_score": 0.504155,
+        "distance": 0.495845,
+        "metadata": {
+          "strategy": "A",
+          "source": "data/raw/Prompt Engineering.pdf",
+          "section": "Prompting Techniques",
+          "year": 2025,
+          "page": 17,
+          "chunk_index": 2,
+          "document_id": "google-prompt-engineering-2025"
+        },
+        "text": "s that are unusual or unexpected,\nbut that the model should still be able to handle.",
+        "is_hit": false
+      }
+    ]
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "question_type": "truc_tiep",
+    "question": "Zero-shot prompting là loại prompt như thế nào và gồm những thành phần gì?",
+    "expected_answer": "Là dạng prompt đơn giản nhất, chỉ cung cấp mô tả nhiệm vụ và văn bản đầu vào cho LLM bắt đầu xử lý mà không kèm ví dụ minh họa.",
+    "filter_applied": null,
+    "gold_source_id": "google-prompt-engineering-2025",
+    "gold_page": [
+      13
+    ],
+    "evidence_quote": "A zero-shot5 prompt is the simplest type of prompt. It only provides a description of a task and some text for the LLM to get started with.",
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "filter_compliant": null,
+    "top_3": [
+      {
+        "rank": 1,
+        "chunk_id": "google-prompt-engineering-2025_A_p013_c0003_a454aa9d1d",
+        "cosine_score": 0.756092,
+        "distance": 0.243908,
+        "metadata": {
+          "chunk_index": 3,
+          "page": 13,
+          "section": "Prompting Techniques",
+          "year": 2025,
+          "document_id": "google-prompt-engineering-2025",
+          "strategy": "A",
+          "source": "data/raw/Prompt Engineering.pdf"
+        },
+        "text": "he most important prompting techniques.\nGeneral prompting / zero shot\nA zero-shot5 prompt is the simplest type of prompt. It only provides a description of a task\nand some text for the LLM to get started with. This input could be anything: a question, a\nstart of a story, or instructions. The name zero-shot stands for ’no examples’.",
+        "is_hit": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "google-prompt-engineering-2025_A_p015_c0001_468814176d",
+        "cosine_score": 0.678303,
+        "distance": 0.321697,
+        "metadata": {
+          "page": 15,
+          "chunk_index": 1,
+          "document_id": "google-prompt-engineering-2025",
+          "source": "data/raw/Prompt Engineering.pdf",
+          "strategy": "A",
+          "section": "Prompting Techniques",
+          "year": 2025
+        },
+        "text": "ero-shot prompting\nWhen zero-shot doesn’t work, you can provide demonstrations or examples in the prompt,\nwhich leads to “one-shot” and “few-shot” prompting. General prompting / zero shot\nOne-shot & few-shot\nWhen creating prompts for AI models, it is helpful to provide examples. These examples can\nhelp the model understand what you are asking for. Examples are especially useful when you\nwant to steer the model to a certain output structure or pattern.\nA one-shot prompt, provides a single example",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "google-prompt-engineering-2025_A_p066_c0000_76c7173d0b",
+        "cosine_score": 0.644383,
+        "distance": 0.355617,
+        "metadata": {
+          "chunk_index": 0,
+          "year": 2025,
+          "section": "Summary",
+          "strategy": "A",
+          "document_id": "google-prompt-engineering-2025",
+          "source": "data/raw/Prompt Engineering.pdf",
+          "page": 66
+        },
+        "text": "Name\n[name and version of your prompt]\nGoal\n[One sentence explanation of the goal of this attempt]\nModel\n[name and version of the used model]\nTemperature\n[value between 0 - 1]\nToken Limit\n[number]\nTop-K\n[number]\nTop-P\n[number]\nPrompt\n[Write all the full prompt]\nOutput\n[Write out the output or multiple outputs]\nTable 21. A template for documenting prompts\nSummary\nThis whitepaper discusses prompt engineering. We learned various prompting techniques,\nsuch as:\n• Zero prompting\n• Few shot prompting\n•",
+        "is_hit": false
+      }
+    ]
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "question_type": "dien_dat_lai",
+    "question": "Yêu cầu mô hình trả về kết quả ở định dạng JSON giúp giải quyết vấn đề gì về cấu trúc và độ tin cậy của đầu ra?",
+    "expected_answer": "Ép mô hình tạo dữ liệu theo cấu trúc định sẵn và hạn chế hiện tượng ảo giác (hallucinations).",
+    "filter_applied": null,
+    "gold_source_id": "google-prompt-engineering-2025",
+    "gold_page": [
+      21
+    ],
+    "evidence_quote": "by prompting for a JSON format it forces the model to create a structure and limit hallucinations.",
+    "hit_at_1": false,
+    "hit_at_3": true,
+    "filter_compliant": null,
+    "top_3": [
+      {
+        "rank": 1,
+        "chunk_id": "google-prompt-engineering-2025_A_p062_c0000_7a171ea1bd",
+        "cosine_score": 0.635281,
+        "distance": 0.364719,
+        "metadata": {
+          "strategy": "A",
+          "document_id": "google-prompt-engineering-2025",
+          "year": 2025,
+          "section": "Best Practices",
+          "page": 62,
+          "chunk_index": 0,
+          "source": "data/raw/Prompt Engineering.pdf"
+        },
+        "text": "Working with Schemas\nUsing structured JSON as an output is a great solution, as we've seen multiple times in this\npaper. But what about input? While JSON is excellent for structuring the output the LLM\ngenerates, it can also be incredibly useful for structuring the input you provide. This is where\nJSON Schemas come into play. A JSON Schema defines the expected structure and data\ntypes of your JSON input. By providing a schema, you give the LLM a clear blueprint of the\ndata it should expect, help",
+        "is_hit": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "google-prompt-engineering-2025_A_p021_c0000_f52b2f8694",
+        "cosine_score": 0.629271,
+        "distance": 0.370729,
+        "metadata": {
+          "document_id": "google-prompt-engineering-2025",
+          "strategy": "A",
+          "page": 21,
+          "source": "data/raw/Prompt Engineering.pdf",
+          "chunk_index": 0,
+          "section": "Prompting Techniques",
+          "year": 2025
+        },
+        "text": "There are some benefits in returning JSON objects from a prompt that extracts data. In\na real-world application I don’t need to manually create this JSON format, I can already\nreturn the data in a sorted order (very handy when working with datetime objects), but most\nimportantly, by prompting for a JSON format it forces the model to create a structure and\nlimit hallucinations.\nSystem prompts can also be really useful for safety and toxicity. To control the output, simply\nadd an additional line t",
+        "is_hit": true
+      },
+      {
+        "rank": 3,
+        "chunk_id": "google-prompt-engineering-2025_A_p061_c0000_9ab0afe488",
+        "cosine_score": 0.628237,
+        "distance": 0.371763,
+        "metadata": {
+          "document_id": "google-prompt-engineering-2025",
+          "chunk_index": 0,
+          "section": "Best Practices",
+          "page": 61,
+          "strategy": "A",
+          "source": "data/raw/Prompt Engineering.pdf",
+          "year": 2025
+        },
+        "text": "• Less chance for hallucinations\n• Make it relationship aware\n• You get data types\n• You can sort it\nTable 4 in the few-shot prompting section shows an example on how to return\nstructured output.\nJSON Repair\nWhile returning data in JSON format offers numerous advantages, it's not without its\ndrawbacks. The structured nature of JSON, while beneficial for parsing and use in\napplications, requires significantly more tokens than plain text, leading to increased\nprocessing time and higher costs. Furt",
+        "is_hit": false
+      }
+    ]
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "question_type": "truc_tiep",
+    "question": "Kỹ thuật Step-back prompting cải thiện hiệu năng của LLM theo quy trình nào?",
+    "expected_answer": "Yêu cầu LLM xem xét một câu hỏi tổng quát liên quan đến nhiệm vụ trước, sau đó đưa câu trả lời tổng quát đó vào prompt tiếp theo để giải quyết bài toán cụ thể.",
+    "filter_applied": null,
+    "gold_source_id": "google-prompt-engineering-2025",
+    "gold_page": [
+      25
+    ],
+    "evidence_quote": "Step-back8 prompting is a technique for improving the performance by prompting the LLM to first consider a general question related to the specific task at hand, and then feeding the answer to that general question into a subsequent prompt for the specific task.",
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "filter_compliant": null,
+    "top_3": [
+      {
+        "rank": 1,
+        "chunk_id": "google-prompt-engineering-2025_A_p025_c0000_5c96fc5549",
+        "cosine_score": 0.801684,
+        "distance": 0.198316,
+        "metadata": {
+          "year": 2025,
+          "document_id": "google-prompt-engineering-2025",
+          "section": "Prompting Techniques",
+          "chunk_index": 0,
+          "page": 25,
+          "source": "data/raw/Prompt Engineering.pdf",
+          "strategy": "A"
+        },
+        "text": "Step-back prompting\nStep-back8 prompting is a technique for improving the performance by prompting the LLM\nto first consider a general question related to the specific task at hand, and then feeding the\nanswer to that general question into a subsequent prompt for the specific task. This ‘step\nback’ allows the LLM to activate relevant background knowledge and reasoning processes\nbefore attempting to solve the specific problem.\nBy considering the broader and underlying principles, LLMs can generat",
+        "is_hit": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "google-prompt-engineering-2025_A_p025_c0001_3aa7cb0bc1",
+        "cosine_score": 0.741364,
+        "distance": 0.258636,
+        "metadata": {
+          "chunk_index": 1,
+          "document_id": "google-prompt-engineering-2025",
+          "year": 2025,
+          "page": 25,
+          "section": "Prompting Techniques",
+          "strategy": "A",
+          "source": "data/raw/Prompt Engineering.pdf"
+        },
+        "text": "roader and underlying principles, LLMs can generate more accurate and\ninsightful responses. Step-back prompting encourages LLMs to think critically and apply their\nknowledge in new and creative ways. It changes the final prompt doing the task by utilizing\nmore knowledge in the LLM’s parameters than would otherwise come into play when the LLM\nis prompted directly.\nIt can help to mitigate biases in LLM responses, by focusing on general principles instead of\nspecific details, step-back prompting.\nL",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "google-prompt-engineering-2025_A_p025_c0002_64866b0e3d",
+        "cosine_score": 0.624108,
+        "distance": 0.375892,
+        "metadata": {
+          "chunk_index": 2,
+          "page": 25,
+          "strategy": "A",
+          "source": "data/raw/Prompt Engineering.pdf",
+          "year": 2025,
+          "section": "Prompting Techniques",
+          "document_id": "google-prompt-engineering-2025"
+        },
+        "text": "nstead of\nspecific details, step-back prompting.\nLet’s have a look into these examples to understand how step-back prompting can improve\nthe results. Let’s first review a traditional prompt (Table 8) before we compare it to a step\nback prompt (Table 9):",
+        "is_hit": false
+      }
+    ]
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "question_type": "truc_tiep",
+    "question": "Vì sao nên kết hợp Chain of Thought (CoT) với few-shot prompting đối với các tác vụ phức tạp?",
+    "expected_answer": "Để đạt kết quả tốt hơn trên các tác vụ phức tạp đòi hỏi suy luận trước khi trả lời, vốn là thách thức với zero-shot CoT.",
+    "filter_applied": null,
+    "gold_source_id": "google-prompt-engineering-2025",
+    "gold_page": [
+      29
+    ],
+    "evidence_quote": "You can combine it with few-shot prompting to get better results on more complex tasks that require reasoning before responding as it’s a challenge with a zero-shot chain of thought.",
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "filter_compliant": null,
+    "top_3": [
+      {
+        "rank": 1,
+        "chunk_id": "google-prompt-engineering-2025_A_p029_c0000_3aa859fc8c",
+        "cosine_score": 0.752193,
+        "distance": 0.247807,
+        "metadata": {
+          "section": "Prompting Techniques",
+          "strategy": "A",
+          "source": "data/raw/Prompt Engineering.pdf",
+          "chunk_index": 0,
+          "document_id": "google-prompt-engineering-2025",
+          "year": 2025,
+          "page": 29
+        },
+        "text": "Chain of Thought (CoT)\nChain of Thought (CoT) 9 prompting is a technique for improving the reasoning capabilities\nof LLMs by generating intermediate reasoning steps. This helps the LLM generate more\naccurate answers. You can combine it with few-shot prompting to get better results on more\ncomplex tasks that require reasoning before responding as it’s a challenge with a zero-shot\nchain of thought.\nCoT has a lot of advantages. First of all, it’s low-effort while being very effective and works\nwell",
+        "is_hit": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "google-prompt-engineering-2025_A_p031_c0003_1b22bbe0d9",
+        "cosine_score": 0.694585,
+        "distance": 0.305415,
+        "metadata": {
+          "source": "data/raw/Prompt Engineering.pdf",
+          "year": 2025,
+          "document_id": "google-prompt-engineering-2025",
+          "chunk_index": 3,
+          "page": 31,
+          "section": "Prompting Techniques",
+          "strategy": "A"
+        },
+        "text": "alking through is a good\ncandidate for a chain of thought. If you can explain the steps to solve the problem, try chain\nof thought.\nPlease refer to the notebook10 hosted in the GoogleCloudPlatform Github repository which\nwill go into further detail on CoT prompting:",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "google-prompt-engineering-2025_A_p036_c0001_6e44eb6cfb",
+        "cosine_score": 0.684871,
+        "distance": 0.315129,
+        "metadata": {
+          "chunk_index": 1,
+          "source": "data/raw/Prompt Engineering.pdf",
+          "document_id": "google-prompt-engineering-2025",
+          "strategy": "A",
+          "year": 2025,
+          "section": "Prompting Techniques",
+          "page": 36
+        },
+        "text": "t’s review\nTree of Thoughts (ToT).12 It generalizes the concept of CoT prompting because it allows LLMs\nto explore multiple different reasoning paths simultaneously, rather than just following a\nsingle linear chain of thought. This is depicted in Figure 1.\nFigure 1. A visualization of chain of thought prompting on the left versus. Tree of Thoughts prompting on\nthe right",
+        "is_hit": false
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "question_type": "dien_dat_lai",
+    "question": "Self-consistency khắc phục nhược điểm gì của Chain of Thought truyền thống bằng cách nào?",
+    "expected_answer": "Khắc phục hạn chế của chiến lược greedy decoding trong CoT bằng cách kết hợp lấy mẫu (sampling) và bỏ phiếu đa số (majority voting) trên nhiều luồng suy luận.",
+    "filter_applied": null,
+    "gold_source_id": "google-prompt-engineering-2025",
+    "gold_page": [
+      32
+    ],
+    "evidence_quote": "However CoT uses a simple ‘greedy decoding’ strategy, limiting its effectiveness. Self-consistency11 combines sampling and majority voting to generate diverse reasoning paths and select the most consistent answer.",
+    "hit_at_1": false,
+    "hit_at_3": true,
+    "filter_compliant": null,
+    "top_3": [
+      {
+        "rank": 1,
+        "chunk_id": "google-prompt-engineering-2025_A_p036_c0000_b94ec8497e",
+        "cosine_score": 0.62151,
+        "distance": 0.37849,
+        "metadata": {
+          "section": "Prompting Techniques",
+          "page": 36,
+          "strategy": "A",
+          "chunk_index": 0,
+          "year": 2025,
+          "document_id": "google-prompt-engineering-2025",
+          "source": "data/raw/Prompt Engineering.pdf"
+        },
+        "text": "By generating many Chains of Thoughts, and taking the most commonly occurring answer\n(“IMPORTANT”), we can get a more consistently correct answer from the LLM.\nThis example shows how self-consistency prompting can be used to improve the accuracy\nof an LLM’s response by considering multiple perspectives and selecting the most\nconsistent answer.\nTree of Thoughts (ToT)\nNow that we are familiar with chain of thought and self-consistency prompting, let’s review\nTree of Thoughts (ToT).12 It generalize",
+        "is_hit": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "google-prompt-engineering-2025_A_p032_c0001_349d5f2759",
+        "cosine_score": 0.576272,
+        "distance": 0.423728,
+        "metadata": {
+          "chunk_index": 1,
+          "page": 32,
+          "year": 2025,
+          "strategy": "A",
+          "source": "data/raw/Prompt Engineering.pdf",
+          "document_id": "google-prompt-engineering-2025",
+          "section": "Prompting Techniques"
+        },
+        "text": "ike a human solving a problem. However CoT uses\na simple ‘greedy decoding’ strategy, limiting its effectiveness. Self-consistency11 combines\nsampling and majority voting to generate diverse reasoning paths and select the most\nconsistent answer. It improves the accuracy and coherence of responses generated by LLMs.\nSelf-consistency gives a pseudo-probability likelihood of an answer being correct, but\nobviously has high costs.\nIt follows the following steps:\n1. Generating diverse reasoning paths:",
+        "is_hit": true
+      },
+      {
+        "rank": 3,
+        "chunk_id": "google-prompt-engineering-2025_A_p032_c0000_5ece87ff6c",
+        "cosine_score": 0.547604,
+        "distance": 0.452396,
+        "metadata": {
+          "strategy": "A",
+          "source": "data/raw/Prompt Engineering.pdf",
+          "page": 32,
+          "year": 2025,
+          "section": "Prompting Techniques",
+          "chunk_index": 0,
+          "document_id": "google-prompt-engineering-2025"
+        },
+        "text": "In the best practices section of this chapter, we will learn some best practices specific to\nChain of thought prompting.\nSelf-consistency\nWhile large language models have shown impressive success in various NLP tasks, their\nability to reason is often seen as a limitation that cannot be overcome solely by increasing\nmodel size. As we learned in the previous Chain of Thought prompting section, the model can\nbe prompted to generate reasoning steps like a human solving a problem. However CoT uses\na",
+        "is_hit": false
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "question_type": "truc_tiep",
+    "question": "Mô hình ReAct (Reason and Act) kết hợp những thành phần nào để giúp LLM thực hiện tác vụ phức tạp?",
+    "expected_answer": "Kết hợp suy luận bằng ngôn ngữ tự nhiên với các công cụ bên ngoài (như tìm kiếm, trình thông dịch code, API) để thực hiện hành động và truy xuất thông tin.",
+    "filter_applied": null,
+    "gold_source_id": "google-prompt-engineering-2025",
+    "gold_page": [
+      37
+    ],
+    "evidence_quote": "Reason and act (ReAct) [10]13 prompting is a paradigm for enabling LLMs to solve complex tasks using natural language reasoning combined with external tools (search, code interpreter etc.) allowing the LLM to perform certain actions, such as interacting with external APIs to retrieve information which is a first step towards agent modeling.",
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "filter_compliant": null,
+    "top_3": [
+      {
+        "rank": 1,
+        "chunk_id": "google-prompt-engineering-2025_A_p037_c0001_b15dcddd47",
+        "cosine_score": 0.72345,
+        "distance": 0.27655,
+        "metadata": {
+          "year": 2025,
+          "source": "data/raw/Prompt Engineering.pdf",
+          "page": 37,
+          "section": "Prompting Techniques",
+          "strategy": "A",
+          "document_id": "google-prompt-engineering-2025",
+          "chunk_index": 1
+        },
+        "text": "(ToT) which is based on the paper ‘Large Language Model Guided Tree-of-Thought’.9\nReAct (reason & act)\nReason and act (ReAct) [10]13 prompting is a paradigm for enabling LLMs to solve complex\ntasks using natural language reasoning combined with external tools (search, code\ninterpreter etc.) allowing the LLM to perform certain actions, such as interacting with external\nAPIs to retrieve information which is a first step towards agent modeling.\nReAct mimics how humans operate in the real world, as",
+        "is_hit": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "google-prompt-engineering-2025_A_p037_c0002_86471911c6",
+        "cosine_score": 0.688371,
+        "distance": 0.311629,
+        "metadata": {
+          "year": 2025,
+          "document_id": "google-prompt-engineering-2025",
+          "page": 37,
+          "section": "Prompting Techniques",
+          "source": "data/raw/Prompt Engineering.pdf",
+          "chunk_index": 2,
+          "strategy": "A"
+        },
+        "text": "t mimics how humans operate in the real world, as we reason verbally and can\ntake actions to gain information. ReAct performs well against other prompt engineering\napproaches in a variety of domains.\nReAct prompting works by combining reasoning and acting into a thought-action loop. The\nLLM first reasons about the problem and generates a plan of action. It then performs the\nactions in the plan and observes the results. The LLM then uses the observations to update\nits reasoning and generate a new",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "google-prompt-engineering-2025_A_p038_c0001_0f81fc5702",
+        "cosine_score": 0.57815,
+        "distance": 0.42185,
+        "metadata": {
+          "strategy": "A",
+          "chunk_index": 1,
+          "source": "data/raw/Prompt Engineering.pdf",
+          "page": 38,
+          "section": "Prompting Techniques",
+          "document_id": "google-prompt-engineering-2025",
+          "year": 2025
+        },
+        "text": "ort VertexAI\nprompt = \"How many kids do the band members of Metallica have?\"\nllm = VertexAI(temperature=0.1)\ntools = load_tools([\"serpapi\"], llm=llm)\nagent = initialize_agent(tools, llm,\nagent=AgentType.ZERO_SHOT_REACT_DESCRIPTION, verbose=True)\nagent.run(prompt)\nSnippet 1. Creating a ReAct Agent with LangChain and VertexAI\nCode Snippet 2 shows the result. Notice that ReAct makes a chain of five searches. In fact,\nthe LLM is scraping Google search results to figure out the band names. Then, it l",
+        "is_hit": false
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "question_type": "dien_dat_lai",
+    "question": "Chu trình lặp cốt lõi của phương pháp Automatic Prompt Engineering (APE) diễn ra như thế nào?",
+    "expected_answer": "Dùng mô hình sinh thêm nhiều prompt, đánh giá chúng, chỉnh sửa các prompt tốt rồi lặp lại.",
+    "filter_applied": null,
+    "gold_source_id": "google-prompt-engineering-2025",
+    "gold_page": [
+      40
+    ],
+    "evidence_quote": "You will prompt a model to generate more prompts. Evaluate them, possibly alter the good ones. And repeat.",
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "filter_compliant": null,
+    "top_3": [
+      {
+        "rank": 1,
+        "chunk_id": "google-prompt-engineering-2025_A_p040_c0000_f0dc20a747",
+        "cosine_score": 0.652919,
+        "distance": 0.347081,
+        "metadata": {
+          "source": "data/raw/Prompt Engineering.pdf",
+          "page": 40,
+          "document_id": "google-prompt-engineering-2025",
+          "chunk_index": 0,
+          "section": "Prompting Techniques",
+          "year": 2025,
+          "strategy": "A"
+        },
+        "text": "Automatic Prompt Engineering\nAt this point you might realize that writing a prompt can be complex. Wouldn’t it be nice to\nautomate this (write a prompt to write prompts)? Well, there’s a method: Automatic Prompt\nEngineering (APE). This method15 not only alleviates the need for human input but also\nenhances the model’s performance in various tasks.\nYou will prompt a model to generate more prompts. Evaluate them, possibly alter the good\nones. And repeat.\nFor example, you can use automatic prompt e",
+        "is_hit": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "google-prompt-engineering-2025_A_p065_c0003_df8010916b",
+        "cosine_score": 0.530886,
+        "distance": 0.469114,
+        "metadata": {
+          "document_id": "google-prompt-engineering-2025",
+          "strategy": "A",
+          "section": "Best Practices",
+          "page": 65,
+          "year": 2025,
+          "chunk_index": 3,
+          "source": "data/raw/Prompt Engineering.pdf"
+        },
+        "text": "pt engineer you should\nrely on automated tests and evaluation procedures to understand how well your prompt\ngeneralizes to a task.\nPrompt engineering is an iterative process. Craft and test different prompts, analyze,\nand document the results. Refine your prompt based on the model’s performance. Keep\nexperimenting until you achieve the desired output. When you change a model or model\nconfiguration, go back and keep experimenting with the previously used prompts.",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "google-prompt-engineering-2025_A_p065_c0001_c378f439b2",
+        "cosine_score": 0.493457,
+        "distance": 0.506543,
+        "metadata": {
+          "year": 2025,
+          "source": "data/raw/Prompt Engineering.pdf",
+          "document_id": "google-prompt-engineering-2025",
+          "section": "Best Practices",
+          "page": 65,
+          "chunk_index": 1,
+          "strategy": "A"
+        },
+        "text": "the version of the prompt (iteration),\na field to capture if the result was OK/NOT OK/SOMETIMES OK, and a field to capture\nfeedback. If you’re lucky enough to be using Vertex AI Studio, save your prompts (using the\nsame name and version as listed in your documentation) and track the hyperlink to the saved\nprompt in the table. This way, you’re always one click away from re-running your prompts.\nWhen working on a retrieval augmented generation system, you should also capture the\nspecific aspects o",
+        "is_hit": false
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "question_type": "dieu_kien_ngoai_le",
+    "question": "Khi yêu cầu sinh mã Python trong Language Studio trên Vertex AI, người dùng cần thao tác bắt buộc nào để tránh mất định dạng thụt lề?",
+    "expected_answer": "Phải nhấn vào nút 'Markdown', nếu không sẽ nhận về văn bản thuần bị mất thụt lề dòng cần thiết để chạy mã.",
+    "filter_applied": null,
+    "gold_source_id": "google-prompt-engineering-2025",
+    "gold_page": [
+      48
+    ],
+    "evidence_quote": "NOTE: When prompting for (Python) code in the Language Studio in Vertex AI, you will have to click on the ‘Markdown’ button. Otherwise you will receive plain text which is missing the proper indenting of lines, which is important for running",
+    "hit_at_1": false,
+    "hit_at_3": true,
+    "filter_compliant": null,
+    "top_3": [
+      {
+        "rank": 1,
+        "chunk_id": "google-prompt-engineering-2025_A_p054_c0001_ac7c63b33a",
+        "cosine_score": 0.587195,
+        "distance": 0.412805,
+        "metadata": {
+          "year": 2025,
+          "page": 54,
+          "section": "Best Practices",
+          "source": "data/raw/Prompt Engineering.pdf",
+          "chunk_index": 1,
+          "document_id": "google-prompt-engineering-2025",
+          "strategy": "A"
+        },
+        "text": "prompt requires tinkering. Language Studio in Vertex AI is a perfect place to\nplay around with your prompts, with the ability to test against the various models.\nUse the following best practices to become a pro in prompt engineering.\nProvide examples\nThe most important best practice is to provide (one shot / few shot) examples within a\nprompt. This is highly effective because it acts as a powerful teaching tool. These examples\nshowcase desired outputs or similar responses, allowing the model to",
+        "is_hit": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "google-prompt-engineering-2025_A_p014_c0000_ff367c4a65",
+        "cosine_score": 0.565357,
+        "distance": 0.434643,
+        "metadata": {
+          "chunk_index": 0,
+          "section": "Prompting Techniques",
+          "source": "data/raw/Prompt Engineering.pdf",
+          "strategy": "A",
+          "year": 2025,
+          "page": 14,
+          "document_id": "google-prompt-engineering-2025"
+        },
+        "text": "Let’s use Vertex AI Studio (for Language) in Vertex AI,6 which provides a playground to test\nprompts. In Table 1, you will see an example zero-shot prompt to classify movie reviews.\nThe table format as used below is a great way of documenting prompts. Your prompts will\nlikely go through many iterations before they end up in a codebase, so it’s important to keep\ntrack of your prompt engineering work in a disciplined, structured way. More on this table\nformat, the importance of tracking prompt eng",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "google-prompt-engineering-2025_A_p048_c0001_e5f723b7ca",
+        "cosine_score": 0.559744,
+        "distance": 0.440256,
+        "metadata": {
+          "chunk_index": 1,
+          "document_id": "google-prompt-engineering-2025",
+          "year": 2025,
+          "section": "Code Prompting",
+          "page": 48,
+          "strategy": "A",
+          "source": "data/raw/Prompt Engineering.pdf"
+        },
+        "text": "Read and review the code. Copy the output from the prompt and paste it into a new file:\nfile_renamer.py. Test the code by opening a Terminal window, and execute the following\ncommand python file_renamer.py.\nNOTE: When prompting for (Python) code in the Language Studio in Vertex AI, you will have\nto click on the ‘Markdown’ button. Otherwise you will receive plain text which is missing the\nproper indenting of lines, which is important for running Python code.\nPrompts for debugging and reviewing c",
+        "is_hit": true
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "question_type": "dieu_kien_ngoai_le",
+    "question": "Trong trường hợp nào các ràng buộc (constraints) vẫn giữ vai trò hữu ích dù tài liệu khuyên ưu tiên hướng dẫn tích cực?",
+    "expected_answer": "Khi cần ngăn mô hình sinh nội dung độc hại/thiên lệch hoặc khi yêu cầu nghiêm ngặt một định dạng hay phong cách đầu ra cụ thể.",
+    "filter_applied": null,
+    "gold_source_id": "google-prompt-engineering-2025",
+    "gold_page": [
+      57
+    ],
+    "evidence_quote": "Constraints are still valuable but in certain situations. To prevent the model from generating harmful or biased content or when a strict output format or style is needed.",
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "filter_compliant": null,
+    "top_3": [
+      {
+        "rank": 1,
+        "chunk_id": "google-prompt-engineering-2025_A_p057_c0001_057b489e2b",
+        "cosine_score": 0.675016,
+        "distance": 0.324984,
+        "metadata": {
+          "year": 2025,
+          "chunk_index": 1,
+          "strategy": "A",
+          "source": "data/raw/Prompt Engineering.pdf",
+          "document_id": "google-prompt-engineering-2025",
+          "section": "Best Practices",
+          "page": 57
+        },
+        "text": "traints can limit the model’s potential. Also a list of constraints\ncan clash with each other.\nConstraints are still valuable but in certain situations. To prevent the model from generating\nharmful or biased content or when a strict output format or style is needed.\nIf possible, use positive instructions: instead of telling the model what not to do, tell it what to\ndo instead. This can avoid confusion and improve the accuracy of the output.\nDO:\nGenerate a 1 paragraph blog post about the top 5 vi",
+        "is_hit": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "google-prompt-engineering-2025_A_p057_c0000_9ccab72999",
+        "cosine_score": 0.666251,
+        "distance": 0.333749,
+        "metadata": {
+          "strategy": "A",
+          "source": "data/raw/Prompt Engineering.pdf",
+          "document_id": "google-prompt-engineering-2025",
+          "chunk_index": 0,
+          "section": "Best Practices",
+          "year": 2025,
+          "page": 57
+        },
+        "text": "Growing research suggests that focusing on positive instructions in prompting can be more\neffective than relying heavily on constraints. This approach aligns with how humans prefer\npositive instructions over lists of what not to do.\nInstructions directly communicate the desired outcome, whereas constraints might leave the\nmodel guessing about what is allowed. It gives flexibility and encourages creativity within the\ndefined boundaries, while constraints can limit the model’s potential. Also a li",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "google-prompt-engineering-2025_A_p056_c0001_3018053726",
+        "cosine_score": 0.586402,
+        "distance": 0.413598,
+        "metadata": {
+          "source": "data/raw/Prompt Engineering.pdf",
+          "page": 56,
+          "year": 2025,
+          "strategy": "A",
+          "chunk_index": 1,
+          "document_id": "google-prompt-engineering-2025",
+          "section": "Best Practices"
+        },
+        "text": "d be\nwritten in a conversational style.\nDO NOT:\nGenerate a blog post about video game consoles.\nUse Instructions over Constraints\nInstructions and constraints are used in prompting to guide the output of a LLM.\n• An instruction provides explicit instructions on the desired format, style, or content of the\nresponse. It guides the model on what the model should do or produce.\n• A constraint is a set of limitations or boundaries on the response. It limits what the model\nshould not do or avoid.",
+        "is_hit": false
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "question_type": "truc_tiep",
+    "question": "Theo quy tắc kinh nghiệm (rule of thumb) trong tài liệu, nên bắt đầu thử nghiệm với bao nhiêu ví dụ few-shot?",
+    "expected_answer": "Nên bắt đầu với 6 ví dụ few-shot rồi kiểm thử độ chính xác từ đó.",
+    "filter_applied": null,
+    "gold_source_id": "google-prompt-engineering-2025",
+    "gold_page": [
+      60
+    ],
+    "evidence_quote": "A good rule of thumb is to start with 6 few shot examples and start testing the accuracy from there.",
+    "hit_at_1": false,
+    "hit_at_3": true,
+    "filter_compliant": null,
+    "top_3": [
+      {
+        "rank": 1,
+        "chunk_id": "google-prompt-engineering-2025_A_p016_c0000_059d088fd3",
+        "cosine_score": 0.678625,
+        "distance": 0.321375,
+        "metadata": {
+          "chunk_index": 0,
+          "year": 2025,
+          "strategy": "A",
+          "page": 16,
+          "document_id": "google-prompt-engineering-2025",
+          "section": "Prompting Techniques",
+          "source": "data/raw/Prompt Engineering.pdf"
+        },
+        "text": "The number of examples you need for few-shot prompting depends on a few factors,\nincluding the complexity of the task, the quality of the examples, and the capabilities of the\ngenerative AI (gen AI) model you are using. As a general rule of thumb, you should use at\nleast three to five examples for few-shot prompting. However, you may need to use more\nexamples for more complex tasks, or you may need to use fewer due to the input length\nlimitation of your model.\nTable 2 shows a few-shot prompt exa",
+        "is_hit": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "google-prompt-engineering-2025_A_p015_c0002_2879ecdc0d",
+        "cosine_score": 0.605122,
+        "distance": 0.394878,
+        "metadata": {
+          "document_id": "google-prompt-engineering-2025",
+          "strategy": "A",
+          "year": 2025,
+          "chunk_index": 2,
+          "source": "data/raw/Prompt Engineering.pdf",
+          "page": 15,
+          "section": "Prompting Techniques"
+        },
+        "text": "tern.\nA one-shot prompt, provides a single example, hence the name one-shot. The idea is the\nmodel has an example it can imitate to best complete the task.\nA few-shot prompt 7 provides multiple examples to the model. This approach shows the\nmodel a pattern that it needs to follow. The idea is similar to one-shot, but multiple examples\nof the desired pattern increases the chance the model follows the pattern.",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "google-prompt-engineering-2025_A_p060_c0000_80015352b5",
+        "cosine_score": 0.596707,
+        "distance": 0.403293,
+        "metadata": {
+          "section": "Best Practices",
+          "chunk_index": 0,
+          "source": "data/raw/Prompt Engineering.pdf",
+          "document_id": "google-prompt-engineering-2025",
+          "page": 60,
+          "year": 2025,
+          "strategy": "A"
+        },
+        "text": "A good rule of thumb is to start with 6 few shot examples and start testing the accuracy\nfrom there.\nAdapt to model updates\nIt’s important for you to stay on top of model architecture changes, added data, and\ncapabilities. Try out newer model versions and adjust your prompts to better leverage new\nmodel features. Tools like Vertex AI Studio are great to store, test, and document the various\nversions of your prompt.\nExperiment with output formats\nBesides the prompt input format, consider experime",
+        "is_hit": true
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "split": "test",
+    "question_type": "truc_tiep",
+    "question": "Tài liệu này tập trung hướng dẫn viết prompt cho mô hình Gemini qua môi trường nào thay vì giao diện chatbot thông thường, và vì lý do gì?",
+    "expected_answer": "Tập trung vào Gemini trong Vertex AI hoặc qua API vì khi gọi trực tiếp mô hình, người dùng có thể truy cập các cấu hình như temperature.",
+    "filter_applied": null,
+    "gold_source_id": "google-prompt-engineering-2025",
+    "gold_page": [
+      7
+    ],
+    "evidence_quote": "this whitepaper focuses on writing prompts for the Gemini model within Vertex AI or by using the API, because by prompting the model directly you will have access to the configuration such as temperature etc.",
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "filter_compliant": null,
+    "top_3": [
+      {
+        "rank": 1,
+        "chunk_id": "google-prompt-engineering-2025_A_p007_c0000_b2e0699bef",
+        "cosine_score": 0.770399,
+        "distance": 0.229601,
+        "metadata": {
+          "strategy": "A",
+          "chunk_index": 0,
+          "document_id": "google-prompt-engineering-2025",
+          "year": 2025,
+          "page": 7,
+          "source": "data/raw/Prompt Engineering.pdf",
+          "section": "Introduction"
+        },
+        "text": "When you chat with the Gemini chatbot,1 you basically write prompts, however this\nwhitepaper focuses on writing prompts for the Gemini model within Vertex AI or by using\nthe API, because by prompting the model directly you will have access to the configuration\nsuch as temperature etc.\nThis whitepaper discusses prompt engineering in detail. We will look into the various\nprompting techniques to help you getting started and share tips and best practices to\nbecome a prompting expert. We will also di",
+        "is_hit": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "google-prompt-engineering-2025_A_p042_c0000_8bca8c9be3",
+        "cosine_score": 0.63966,
+        "distance": 0.36034,
+        "metadata": {
+          "section": "Code Prompting",
+          "year": 2025,
+          "page": 42,
+          "chunk_index": 0,
+          "strategy": "A",
+          "document_id": "google-prompt-engineering-2025",
+          "source": "data/raw/Prompt Engineering.pdf"
+        },
+        "text": "Code prompting\nGemini focuses primarily on text-based prompts, which also includes writing prompts for\nreturning code. Let’s go to the Vertex AI Studio and test these prompts to look at some\ncoding examples.\nPrompts for writing code\nGemini can also be a developer and help you with writing code in any programming language\nof choice. As a developer this can help you speed up the process of writing code.\nImagine a folder on your machine with hundreds of files that needs to be renamed.\nRenaming each",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "google-prompt-engineering-2025_A_p008_c0001_a25c09ad92",
+        "cosine_score": 0.617192,
+        "distance": 0.382808,
+        "metadata": {
+          "page": 8,
+          "chunk_index": 1,
+          "section": "LLM Output Configuration",
+          "document_id": "google-prompt-engineering-2025",
+          "year": 2025,
+          "strategy": "A",
+          "source": "data/raw/Prompt Engineering.pdf"
+        },
+        "text": "eed to be\noptimized for your specific model, regardless of whether you use Gemini language models in\nVertex AI, GPT, Claude, or an open source model like Gemma or LLaMA.\nBesides the prompt, you will also need to tinker with the various configurations of a LLM.\nLLM output configuration\nOnce you choose your model you will need to figure out the model configuration. Most LLMs\ncome with various configuration options that control the LLM’s output. Effective prompt\nengineering requires setting these c",
+        "is_hit": false
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "split": "test",
+    "question_type": "dien_dat_lai",
+    "question": "Tree of Thoughts (ToT) tổng quát hóa cách tiếp cận của Chain of Thought theo hướng nào?",
+    "expected_answer": "Cho phép LLM khám phá đồng thời nhiều nhánh suy luận khác nhau thay vì chỉ đi theo một chuỗi suy luận tuyến tính duy nhất.",
+    "filter_applied": null,
+    "gold_source_id": "google-prompt-engineering-2025",
+    "gold_page": [
+      36
+    ],
+    "evidence_quote": "It generalizes the concept of CoT prompting because it allows LLMs to explore multiple different reasoning paths simultaneously, rather than just following a single linear chain of thought.",
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "filter_compliant": null,
+    "top_3": [
+      {
+        "rank": 1,
+        "chunk_id": "google-prompt-engineering-2025_A_p036_c0001_6e44eb6cfb",
+        "cosine_score": 0.717432,
+        "distance": 0.282568,
+        "metadata": {
+          "section": "Prompting Techniques",
+          "source": "data/raw/Prompt Engineering.pdf",
+          "document_id": "google-prompt-engineering-2025",
+          "strategy": "A",
+          "chunk_index": 1,
+          "page": 36,
+          "year": 2025
+        },
+        "text": "t’s review\nTree of Thoughts (ToT).12 It generalizes the concept of CoT prompting because it allows LLMs\nto explore multiple different reasoning paths simultaneously, rather than just following a\nsingle linear chain of thought. This is depicted in Figure 1.\nFigure 1. A visualization of chain of thought prompting on the left versus. Tree of Thoughts prompting on\nthe right",
+        "is_hit": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "google-prompt-engineering-2025_A_p037_c0000_b776730667",
+        "cosine_score": 0.681111,
+        "distance": 0.318889,
+        "metadata": {
+          "chunk_index": 0,
+          "document_id": "google-prompt-engineering-2025",
+          "source": "data/raw/Prompt Engineering.pdf",
+          "section": "Prompting Techniques",
+          "year": 2025,
+          "page": 37,
+          "strategy": "A"
+        },
+        "text": "This approach makes ToT particularly well-suited for complex tasks that require exploration. It\nworks by maintaining a tree of thoughts, where each thought represents a coherent language\nsequence that serves as an intermediate step toward solving a problem. The model can then\nexplore different reasoning paths by branching out from different nodes in the tree.\nThere’s a great notebook, which goes into a bit more detail showing The Tree of Thought\n(ToT) which is based on the paper ‘Large Language",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "google-prompt-engineering-2025_A_p036_c0000_b94ec8497e",
+        "cosine_score": 0.671269,
+        "distance": 0.328731,
+        "metadata": {
+          "year": 2025,
+          "section": "Prompting Techniques",
+          "source": "data/raw/Prompt Engineering.pdf",
+          "strategy": "A",
+          "document_id": "google-prompt-engineering-2025",
+          "page": 36,
+          "chunk_index": 0
+        },
+        "text": "By generating many Chains of Thoughts, and taking the most commonly occurring answer\n(“IMPORTANT”), we can get a more consistently correct answer from the LLM.\nThis example shows how self-consistency prompting can be used to improve the accuracy\nof an LLM’s response by considering multiple perspectives and selecting the most\nconsistent answer.\nTree of Thoughts (ToT)\nNow that we are familiar with chain of thought and self-consistency prompting, let’s review\nTree of Thoughts (ToT).12 It generalize",
+        "is_hit": false
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "split": "test",
+    "question_type": "dieu_kien_ngoai_le",
+    "question": "Dù thứ tự các ví dụ few-shot thường không quan trọng, nhưng đối với bài toán phân loại (classification) cần lưu ý điều gì để tránh overfitting?",
+    "expected_answer": "Cần xáo trộn (mix up) các lớp nhãn phản hồi trong các ví dụ few-shot để mô hình không học vẹt thứ tự ví dụ.",
+    "filter_applied": null,
+    "gold_source_id": "google-prompt-engineering-2025",
+    "gold_page": [
+      59
+    ],
+    "evidence_quote": "Generally speaking, the order of your few-shots examples should not matter much. However, when doing classification tasks, make sure you mix up the possible response classes in the few shot examples. This is because you might otherwise be overfitting to the specific order of the examples.",
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "filter_compliant": null,
+    "top_3": [
+      {
+        "rank": 1,
+        "chunk_id": "google-prompt-engineering-2025_A_p059_c0002_e438dbaf88",
+        "cosine_score": 0.739172,
+        "distance": 0.260828,
+        "metadata": {
+          "year": 2025,
+          "document_id": "google-prompt-engineering-2025",
+          "section": "Best Practices",
+          "strategy": "A",
+          "source": "data/raw/Prompt Engineering.pdf",
+          "page": 59,
+          "chunk_index": 2
+        },
+        "text": "sses\nGenerally speaking, the order of your few-shots examples should not matter much. However,\nwhen doing classification tasks, make sure you mix up the possible response classes in the\nfew shot examples. This is because you might otherwise be overfitting to the specific order of\nthe examples. By mixing up the possible response classes, you can ensure that the model is\nlearning to identify the key features of each class, rather than simply memorizing the order of\nthe examples. This will lead to",
+        "is_hit": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "google-prompt-engineering-2025_A_p016_c0000_059d088fd3",
+        "cosine_score": 0.601128,
+        "distance": 0.398872,
+        "metadata": {
+          "chunk_index": 0,
+          "document_id": "google-prompt-engineering-2025",
+          "page": 16,
+          "year": 2025,
+          "section": "Prompting Techniques",
+          "source": "data/raw/Prompt Engineering.pdf",
+          "strategy": "A"
+        },
+        "text": "The number of examples you need for few-shot prompting depends on a few factors,\nincluding the complexity of the task, the quality of the examples, and the capabilities of the\ngenerative AI (gen AI) model you are using. As a general rule of thumb, you should use at\nleast three to five examples for few-shot prompting. However, you may need to use more\nexamples for more complex tasks, or you may need to use fewer due to the input length\nlimitation of your model.\nTable 2 shows a few-shot prompt exa",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "google-prompt-engineering-2025_A_p017_c0001_986230db68",
+        "cosine_score": 0.583181,
+        "distance": 0.416819,
+        "metadata": {
+          "year": 2025,
+          "document_id": "google-prompt-engineering-2025",
+          "chunk_index": 1,
+          "source": "data/raw/Prompt Engineering.pdf",
+          "page": 17,
+          "strategy": "A",
+          "section": "Prompting Techniques"
+        },
+        "text": "Table 2. An example of few-shot prompting\nWhen you choose examples for your prompt, use examples that are relevant to the task you\nwant to perform. The examples should be diverse, of high quality, and well written. One small\nmistake can confuse the model and will result in undesired output.\nIf you are trying to generate output that is robust to a variety of inputs, then it is important to\ninclude edge cases in your examples. Edge cases are inputs that are unusual or unexpected,\nbut that the mod",
+        "is_hit": false
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "split": "test",
+    "question_type": "truc_tiep",
+    "question": "Việc cung cấp JSON Schema cho dữ liệu đầu vào giúp ích gì cho LLM khi xử lý thông tin?",
+    "expected_answer": "Cung cấp bản thiết kế rõ ràng về dữ liệu đầu vào, giúp LLM tập trung vào thông tin liên quan và giảm nguy cơ hiểu sai dữ liệu.",
+    "filter_applied": null,
+    "gold_source_id": "google-prompt-engineering-2025",
+    "gold_page": [
+      62
+    ],
+    "evidence_quote": "By providing a schema, you give the LLM a clear blueprint of the data it should expect, helping it focus its attention on the relevant information and reducing the risk of misinterpreting the input.",
+    "hit_at_1": false,
+    "hit_at_3": false,
+    "filter_compliant": null,
+    "top_3": [
+      {
+        "rank": 1,
+        "chunk_id": "google-prompt-engineering-2025_A_p062_c0000_7a171ea1bd",
+        "cosine_score": 0.759268,
+        "distance": 0.240732,
+        "metadata": {
+          "chunk_index": 0,
+          "source": "data/raw/Prompt Engineering.pdf",
+          "document_id": "google-prompt-engineering-2025",
+          "year": 2025,
+          "section": "Best Practices",
+          "page": 62,
+          "strategy": "A"
+        },
+        "text": "Working with Schemas\nUsing structured JSON as an output is a great solution, as we've seen multiple times in this\npaper. But what about input? While JSON is excellent for structuring the output the LLM\ngenerates, it can also be incredibly useful for structuring the input you provide. This is where\nJSON Schemas come into play. A JSON Schema defines the expected structure and data\ntypes of your JSON input. By providing a schema, you give the LLM a clear blueprint of the\ndata it should expect, help",
+        "is_hit": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "google-prompt-engineering-2025_A_p063_c0000_a83ba02db8",
+        "cosine_score": 0.690737,
+        "distance": 0.309263,
+        "metadata": {
+          "year": 2025,
+          "source": "data/raw/Prompt Engineering.pdf",
+          "page": 63,
+          "section": "Best Practices",
+          "strategy": "A",
+          "chunk_index": 0,
+          "document_id": "google-prompt-engineering-2025"
+        },
+        "text": "Then, you can provide the actual product data as a JSON object that conforms to\nthis schema:\nSnippet 6. Structured output from the LLM\nBy preprocessing your data and instead of providing full documents only providing both the\nschema and the data, you give the LLM a clear understanding of the product's attributes,\nincluding its release date, making it much more likely to generate an accurate and relevant\ndescription. This structured input approach, guiding the LLM's attention to the relevant fiel",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "google-prompt-engineering-2025_A_p062_c0001_c97de347d1",
+        "cosine_score": 0.656657,
+        "distance": 0.343343,
+        "metadata": {
+          "section": "Best Practices",
+          "source": "data/raw/Prompt Engineering.pdf",
+          "strategy": "A",
+          "chunk_index": 1,
+          "year": 2025,
+          "document_id": "google-prompt-engineering-2025",
+          "page": 62
+        },
+        "text": "clear blueprint of the\ndata it should expect, helping it focus its attention on the relevant information and reducing\nthe risk of misinterpreting the input. Furthermore, schemas can help establish relationships\nbetween different pieces of data and even make the LLM \"time-aware\" by including date or\ntimestamp fields with specific formats.\nHere's a simple example:\nLet's say you want to use an LLM to generate descriptions for products in an e-commerce\ncatalog. Instead of just providing a free-form",
+        "is_hit": false
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "split": "test",
+    "question_type": "dieu_kien_ngoai_le",
+    "question": "Vì sao khi áp dụng Chain of Thought (CoT) bắt buộc phải đặt câu trả lời sau phần lập luận (reasoning)?",
+    "expected_answer": "Vì quá trình sinh phần lập luận làm thay đổi các token mà mô hình nhận được khi dự đoán câu trả lời cuối cùng.",
+    "filter_applied": null,
+    "gold_source_id": "google-prompt-engineering-2025",
+    "gold_page": [
+      64
+    ],
+    "evidence_quote": "For CoT prompting, putting the answer after the reasoning is required because the generation of the reasoning changes the tokens that the model gets when it predicts the final answer.",
+    "hit_at_1": true,
+    "hit_at_3": true,
+    "filter_compliant": null,
+    "top_3": [
+      {
+        "rank": 1,
+        "chunk_id": "google-prompt-engineering-2025_A_p064_c0000_9e1baae811",
+        "cosine_score": 0.694849,
+        "distance": 0.305151,
+        "metadata": {
+          "source": "data/raw/Prompt Engineering.pdf",
+          "section": "Best Practices",
+          "strategy": "A",
+          "year": 2025,
+          "chunk_index": 0,
+          "page": 64,
+          "document_id": "google-prompt-engineering-2025"
+        },
+        "text": "CoT Best practices\nFor CoT prompting, putting the answer after the reasoning is required because the\ngeneration of the reasoning changes the tokens that the model gets when it predicts the\nfinal answer.\nWith CoT and self-consistency you need to be able to extract the final answer from your\nprompt, separated from the reasoning.\nFor CoT prompting, set the temperature to 0.\nChain of thought prompting is based on greedy decoding, predicting the next word in a\nsequence based on the highest probabilit",
+        "is_hit": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "google-prompt-engineering-2025_A_p029_c0000_3aa859fc8c",
+        "cosine_score": 0.661374,
+        "distance": 0.338626,
+        "metadata": {
+          "strategy": "A",
+          "chunk_index": 0,
+          "year": 2025,
+          "document_id": "google-prompt-engineering-2025",
+          "page": 29,
+          "section": "Prompting Techniques",
+          "source": "data/raw/Prompt Engineering.pdf"
+        },
+        "text": "Chain of Thought (CoT)\nChain of Thought (CoT) 9 prompting is a technique for improving the reasoning capabilities\nof LLMs by generating intermediate reasoning steps. This helps the LLM generate more\naccurate answers. You can combine it with few-shot prompting to get better results on more\ncomplex tasks that require reasoning before responding as it’s a challenge with a zero-shot\nchain of thought.\nCoT has a lot of advantages. First of all, it’s low-effort while being very effective and works\nwell",
+        "is_hit": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "google-prompt-engineering-2025_A_p036_c0001_6e44eb6cfb",
+        "cosine_score": 0.636524,
+        "distance": 0.363476,
+        "metadata": {
+          "strategy": "A",
+          "section": "Prompting Techniques",
+          "chunk_index": 1,
+          "page": 36,
+          "source": "data/raw/Prompt Engineering.pdf",
+          "document_id": "google-prompt-engineering-2025",
+          "year": 2025
+        },
+        "text": "t’s review\nTree of Thoughts (ToT).12 It generalizes the concept of CoT prompting because it allows LLMs\nto explore multiple different reasoning paths simultaneously, rather than just following a\nsingle linear chain of thought. This is depicted in Figure 1.\nFigure 1. A visualization of chain of thought prompting on the left versus. Tree of Thoughts prompting on\nthe right",
+        "is_hit": false
+      }
+    ]
+  }
+]

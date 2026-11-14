@@ -1,0 +1,550 @@
+{
+  "source_id": "google-prompt-engineering-2025",
+  "title": "Prompt Engineering",
+  "author": "Lee Boonstra",
+  "source_path_or_url": "data/raw/Prompt Engineering.pdf",
+  "license_or_permission": "Public Google Whitepaper (February 2025), used for educational/research lab",
+  "version_or_snapshot": "February 2025",
+  "accessed_at": "2026-11-13",
+  "total_physical_pages": 68,
+  "included_page_count": 62,
+  "excluded_page_count": 6,
+  "included_pages": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67
+  ],
+  "excluded_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    68
+  ],
+  "page_ids": [
+    "google-prompt-engineering-2025:p006",
+    "google-prompt-engineering-2025:p007",
+    "google-prompt-engineering-2025:p008",
+    "google-prompt-engineering-2025:p009",
+    "google-prompt-engineering-2025:p010",
+    "google-prompt-engineering-2025:p011",
+    "google-prompt-engineering-2025:p012",
+    "google-prompt-engineering-2025:p013",
+    "google-prompt-engineering-2025:p014",
+    "google-prompt-engineering-2025:p015",
+    "google-prompt-engineering-2025:p016",
+    "google-prompt-engineering-2025:p017",
+    "google-prompt-engineering-2025:p018",
+    "google-prompt-engineering-2025:p019",
+    "google-prompt-engineering-2025:p020",
+    "google-prompt-engineering-2025:p021",
+    "google-prompt-engineering-2025:p022",
+    "google-prompt-engineering-2025:p023",
+    "google-prompt-engineering-2025:p024",
+    "google-prompt-engineering-2025:p025",
+    "google-prompt-engineering-2025:p026",
+    "google-prompt-engineering-2025:p027",
+    "google-prompt-engineering-2025:p028",
+    "google-prompt-engineering-2025:p029",
+    "google-prompt-engineering-2025:p030",
+    "google-prompt-engineering-2025:p031",
+    "google-prompt-engineering-2025:p032",
+    "google-prompt-engineering-2025:p033",
+    "google-prompt-engineering-2025:p034",
+    "google-prompt-engineering-2025:p035",
+    "google-prompt-engineering-2025:p036",
+    "google-prompt-engineering-2025:p037",
+    "google-prompt-engineering-2025:p038",
+    "google-prompt-engineering-2025:p039",
+    "google-prompt-engineering-2025:p040",
+    "google-prompt-engineering-2025:p041",
+    "google-prompt-engineering-2025:p042",
+    "google-prompt-engineering-2025:p043",
+    "google-prompt-engineering-2025:p044",
+    "google-prompt-engineering-2025:p045",
+    "google-prompt-engineering-2025:p046",
+    "google-prompt-engineering-2025:p047",
+    "google-prompt-engineering-2025:p048",
+    "google-prompt-engineering-2025:p049",
+    "google-prompt-engineering-2025:p050",
+    "google-prompt-engineering-2025:p051",
+    "google-prompt-engineering-2025:p052",
+    "google-prompt-engineering-2025:p053",
+    "google-prompt-engineering-2025:p054",
+    "google-prompt-engineering-2025:p055",
+    "google-prompt-engineering-2025:p056",
+    "google-prompt-engineering-2025:p057",
+    "google-prompt-engineering-2025:p058",
+    "google-prompt-engineering-2025:p059",
+    "google-prompt-engineering-2025:p060",
+    "google-prompt-engineering-2025:p061",
+    "google-prompt-engineering-2025:p062",
+    "google-prompt-engineering-2025:p063",
+    "google-prompt-engineering-2025:p064",
+    "google-prompt-engineering-2025:p065",
+    "google-prompt-engineering-2025:p066",
+    "google-prompt-engineering-2025:p067"
+  ],
+  "total_characters": 77336,
+  "counting_method": "Physical PDF has 68 pages. Excluded non-content pages (cover, acknowledgements/authors, table of contents, endnotes). Clipped top 9% and bottom 10% margins via PyMuPDF to remove repeated header ('Prompt Engineering') and footer ('February 2025 | <page>').",
+  "sections": {
+    "Introduction": {
+      "pages": 2,
+      "char_count": 2443
+    },
+    "LLM Output Configuration": {
+      "pages": 5,
+      "char_count": 7610
+    },
+    "Prompting Techniques": {
+      "pages": 29,
+      "char_count": 38637
+    },
+    "Code Prompting": {
+      "pages": 12,
+      "char_count": 12402
+    },
+    "Best Practices": {
+      "pages": 12,
+      "char_count": 15343
+    },
+    "Summary": {
+      "pages": 2,
+      "char_count": 901
+    }
+  },
+  "pages": [
+    {
+      "page_id": "google-prompt-engineering-2025:p006",
+      "page": 6,
+      "section": "Introduction",
+      "char_count": 849
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p007",
+      "page": 7,
+      "section": "Introduction",
+      "char_count": 1594
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p008",
+      "page": 8,
+      "section": "LLM Output Configuration",
+      "char_count": 1242
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p009",
+      "page": 9,
+      "section": "LLM Output Configuration",
+      "char_count": 1413
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p010",
+      "page": 10,
+      "section": "LLM Output Configuration",
+      "char_count": 1555
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p011",
+      "page": 11,
+      "section": "LLM Output Configuration",
+      "char_count": 1369
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p012",
+      "page": 12,
+      "section": "LLM Output Configuration",
+      "char_count": 2031
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p013",
+      "page": 13,
+      "section": "Prompting Techniques",
+      "char_count": 1683
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p014",
+      "page": 14,
+      "section": "Prompting Techniques",
+      "char_count": 1043
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p015",
+      "page": 15,
+      "section": "Prompting Techniques",
+      "char_count": 1311
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p016",
+      "page": 16,
+      "section": "Prompting Techniques",
+      "char_count": 1027
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p017",
+      "page": 17,
+      "section": "Prompting Techniques",
+      "char_count": 984
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p018",
+      "page": 18,
+      "section": "Prompting Techniques",
+      "char_count": 1392
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p019",
+      "page": 19,
+      "section": "Prompting Techniques",
+      "char_count": 1522
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p020",
+      "page": 20,
+      "section": "Prompting Techniques",
+      "char_count": 687
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p021",
+      "page": 21,
+      "section": "Prompting Techniques",
+      "char_count": 1241
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p022",
+      "page": 22,
+      "section": "Prompting Techniques",
+      "char_count": 1453
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p023",
+      "page": 23,
+      "section": "Prompting Techniques",
+      "char_count": 1601
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p024",
+      "page": 24,
+      "section": "Prompting Techniques",
+      "char_count": 1139
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p025",
+      "page": 25,
+      "section": "Prompting Techniques",
+      "char_count": 1153
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p026",
+      "page": 26,
+      "section": "Prompting Techniques",
+      "char_count": 1154
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p027",
+      "page": 27,
+      "section": "Prompting Techniques",
+      "char_count": 1302
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p028",
+      "page": 28,
+      "section": "Prompting Techniques",
+      "char_count": 2124
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p029",
+      "page": 29,
+      "section": "Prompting Techniques",
+      "char_count": 1567
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p030",
+      "page": 30,
+      "section": "Prompting Techniques",
+      "char_count": 1486
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p031",
+      "page": 31,
+      "section": "Prompting Techniques",
+      "char_count": 1616
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p032",
+      "page": 32,
+      "section": "Prompting Techniques",
+      "char_count": 1575
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p033",
+      "page": 33,
+      "section": "Prompting Techniques",
+      "char_count": 729
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p034",
+      "page": 34,
+      "section": "Prompting Techniques",
+      "char_count": 1852
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p035",
+      "page": 35,
+      "section": "Prompting Techniques",
+      "char_count": 1923
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p036",
+      "page": 36,
+      "section": "Prompting Techniques",
+      "char_count": 822
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p037",
+      "page": 37,
+      "section": "Prompting Techniques",
+      "char_count": 1698
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p038",
+      "page": 38,
+      "section": "Prompting Techniques",
+      "char_count": 1026
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p039",
+      "page": 39,
+      "section": "Prompting Techniques",
+      "char_count": 1483
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p040",
+      "page": 40,
+      "section": "Prompting Techniques",
+      "char_count": 844
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p041",
+      "page": 41,
+      "section": "Prompting Techniques",
+      "char_count": 1200
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p042",
+      "page": 42,
+      "section": "Code Prompting",
+      "char_count": 943
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p043",
+      "page": 43,
+      "section": "Code Prompting",
+      "char_count": 1091
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p044",
+      "page": 44,
+      "section": "Code Prompting",
+      "char_count": 868
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p045",
+      "page": 45,
+      "section": "Code Prompting",
+      "char_count": 997
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p046",
+      "page": 46,
+      "section": "Code Prompting",
+      "char_count": 1256
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p047",
+      "page": 47,
+      "section": "Code Prompting",
+      "char_count": 768
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p048",
+      "page": 48,
+      "section": "Code Prompting",
+      "char_count": 1194
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p049",
+      "page": 49,
+      "section": "Code Prompting",
+      "char_count": 878
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p050",
+      "page": 50,
+      "section": "Code Prompting",
+      "char_count": 893
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p051",
+      "page": 51,
+      "section": "Code Prompting",
+      "char_count": 1148
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p052",
+      "page": 52,
+      "section": "Code Prompting",
+      "char_count": 1300
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p053",
+      "page": 53,
+      "section": "Code Prompting",
+      "char_count": 1066
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p054",
+      "page": 54,
+      "section": "Best Practices",
+      "char_count": 1166
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p055",
+      "page": 55,
+      "section": "Best Practices",
+      "char_count": 922
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p056",
+      "page": 56,
+      "section": "Best Practices",
+      "char_count": 945
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p057",
+      "page": 57,
+      "section": "Best Practices",
+      "char_count": 1497
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p058",
+      "page": 58,
+      "section": "Best Practices",
+      "char_count": 1146
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p059",
+      "page": 59,
+      "section": "Best Practices",
+      "char_count": 1457
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p060",
+      "page": 60,
+      "section": "Best Practices",
+      "char_count": 1210
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p061",
+      "page": 61,
+      "section": "Best Practices",
+      "char_count": 1108
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p062",
+      "page": 62,
+      "section": "Best Practices",
+      "char_count": 1561
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p063",
+      "page": 63,
+      "section": "Best Practices",
+      "char_count": 1147
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p064",
+      "page": 64,
+      "section": "Best Practices",
+      "char_count": 1368
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p065",
+      "page": 65,
+      "section": "Best Practices",
+      "char_count": 1816
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p066",
+      "page": 66,
+      "section": "Summary",
+      "char_count": 636
+    },
+    {
+      "page_id": "google-prompt-engineering-2025:p067",
+      "page": 67,
+      "section": "Summary",
+      "char_count": 265
+    }
+  ]
+}

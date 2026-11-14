@@ -1,0 +1,270 @@
+﻿page_id,page,section,strategy,chunk_id,chunk_length,chunk_text,coherence_score_0_to_2,reason
+google-prompt-engineering-2025:p006,6,Introduction,A,google-prompt-engineering-2025_A_p006_c0000_9bbd7b0a0c,500,"Introduction
+When thinking about a large language model input and output, a text prompt (sometimes
+accompanied by other modalities such as image prompts) is the input the model uses
+to predict a specific output. You don’t need to be a data scientist or a machine learning
+engineer – everyone can write a prompt. However, crafting the most effective prompt can be
+complicated. Many aspects of your prompt affect its efficacy: the model you use, the model’s
+training data, the model configurations, you",1,"Hiểu được ý chính giới thiệu prompt ở đầu đoạn nhưng bị cắt cụt giữa từ ""you"" ở cuối."
+google-prompt-engineering-2025:p006,6,Introduction,B,google-prompt-engineering-2025_B_p006_c0000_b54ea44271,749,"Introduction
+When thinking about a large language model input and output, a text prompt (sometimes
+accompanied by other modalities such as image prompts) is the input the model uses
+to predict a specific output. You don’t need to be a data scientist or a machine learning
+engineer – everyone can write a prompt. However, crafting the most effective prompt can be
+complicated. Many aspects of your prompt affect its efficacy: the model you use, the model’s
+training data, the model configurations, your word-choice, style and tone, structure, and
+context all matter. Therefore, prompt engineering is an iterative process. Inadequate prompts
+can lead to ambiguous, inaccurate responses, and can hinder the model’s ability to provide
+meaningful output.",2,"Giữ trọn vẹn cả đoạn mở đầu từ tiêu đề Introduction đến hết câu kết luận, tự hiểu đầy đủ."
+google-prompt-engineering-2025:p006,6,Introduction,C,google-prompt-engineering-2025_C_p006_c0000_b54ea44271,749,"Introduction
+When thinking about a large language model input and output, a text prompt (sometimes
+accompanied by other modalities such as image prompts) is the input the model uses
+to predict a specific output. You don’t need to be a data scientist or a machine learning
+engineer – everyone can write a prompt. However, crafting the most effective prompt can be
+complicated. Many aspects of your prompt affect its efficacy: the model you use, the model’s
+training data, the model configurations, your word-choice, style and tone, structure, and
+context all matter. Therefore, prompt engineering is an iterative process. Inadequate prompts
+can lead to ambiguous, inaccurate responses, and can hinder the model’s ability to provide
+meaningful output.",2,"Giữ trọn vẹn cả đoạn mở đầu từ tiêu đề Introduction đến hết câu kết luận, tự hiểu đầy đủ."
+google-prompt-engineering-2025:p007,7,Introduction,A,google-prompt-engineering-2025_A_p007_c0000_b2e0699bef,500,"When you chat with the Gemini chatbot,1 you basically write prompts, however this
+whitepaper focuses on writing prompts for the Gemini model within Vertex AI or by using
+the API, because by prompting the model directly you will have access to the configuration
+such as temperature etc.
+This whitepaper discusses prompt engineering in detail. We will look into the various
+prompting techniques to help you getting started and share tips and best practices to
+become a prompting expert. We will also di",1,"Hiểu được nội dung chính về Gemini và Vertex AI/API nhưng bị cắt ngang giữa từ ""di"" ở cuối."
+google-prompt-engineering-2025:p007,7,Introduction,B,google-prompt-engineering-2025_B_p007_c0000_0cf9f597ad,565,"When you chat with the Gemini chatbot,1 you basically write prompts, however this
+whitepaper focuses on writing prompts for the Gemini model within Vertex AI or by using
+the API, because by prompting the model directly you will have access to the configuration
+such as temperature etc.
+This whitepaper discusses prompt engineering in detail. We will look into the various
+prompting techniques to help you getting started and share tips and best practices to
+become a prompting expert. We will also discuss some of the challenges you can face
+while crafting prompts.",2,"Trọn vẹn 2 đoạn văn giới thiệu phạm vi tài liệu, câu chữ hoàn chỉnh."
+google-prompt-engineering-2025:p007,7,Introduction,C,google-prompt-engineering-2025_C_p007_c0000_0cf9f597ad,565,"When you chat with the Gemini chatbot,1 you basically write prompts, however this
+whitepaper focuses on writing prompts for the Gemini model within Vertex AI or by using
+the API, because by prompting the model directly you will have access to the configuration
+such as temperature etc.
+This whitepaper discusses prompt engineering in detail. We will look into the various
+prompting techniques to help you getting started and share tips and best practices to
+become a prompting expert. We will also discuss some of the challenges you can face
+while crafting prompts.",2,"Trọn vẹn 2 đoạn văn giới thiệu phạm vi tài liệu, câu chữ hoàn chỉnh."
+google-prompt-engineering-2025:p008,8,LLM Output Configuration,A,google-prompt-engineering-2025_A_p008_c0000_3b3f772649,500,"These prompts can be used to achieve various kinds of understanding and generation
+tasks such as text summarization, information extraction, question and answering, text
+classification, language or code translation, code generation, and code documentation
+or reasoning.
+Please feel free to refer to Google’s prompting guides2,3 with simple and effective
+prompting examples.
+When prompt engineering, you will start by choosing a model. Prompts might need to be
+optimized for your specific model, regar",1,"Hiểu được các tác vụ của prompt nhưng thiếu chủ thể ""These prompts"" từ trang trước và bị cắt giữa từ ""regar"""
+google-prompt-engineering-2025:p008,8,LLM Output Configuration,B,google-prompt-engineering-2025_B_p008_c0000_9cca9a46a4,710,"These prompts can be used to achieve various kinds of understanding and generation
+tasks such as text summarization, information extraction, question and answering, text
+classification, language or code translation, code generation, and code documentation
+or reasoning.
+Please feel free to refer to Google’s prompting guides2,3 with simple and effective
+prompting examples.
+When prompt engineering, you will start by choosing a model. Prompts might need to be
+optimized for your specific model, regardless of whether you use Gemini language models in
+Vertex AI, GPT, Claude, or an open source model like Gemma or LLaMA.
+Besides the prompt, you will also need to tinker with the various configurations of a LLM.",2,Giữ trọn 3 đoạn văn hoàn chỉnh về tác vụ của prompt và việc chọn mô hình/cấu hình.
+google-prompt-engineering-2025:p008,8,LLM Output Configuration,C,google-prompt-engineering-2025_C_p008_c0000_9cca9a46a4,710,"These prompts can be used to achieve various kinds of understanding and generation
+tasks such as text summarization, information extraction, question and answering, text
+classification, language or code translation, code generation, and code documentation
+or reasoning.
+Please feel free to refer to Google’s prompting guides2,3 with simple and effective
+prompting examples.
+When prompt engineering, you will start by choosing a model. Prompts might need to be
+optimized for your specific model, regardless of whether you use Gemini language models in
+Vertex AI, GPT, Claude, or an open source model like Gemma or LLaMA.
+Besides the prompt, you will also need to tinker with the various configurations of a LLM.",2,Giữ trọn 3 đoạn văn hoàn chỉnh về tác vụ của prompt và việc chọn mô hình/cấu hình.
+google-prompt-engineering-2025:p009,9,LLM Output Configuration,A,google-prompt-engineering-2025_A_p009_c0000_efd270b8d2,500,"Reducing the output length of the LLM doesn’t cause the LLM to become more stylistically
+or textually succinct in the output it creates, it just causes the LLM to stop predicting more
+tokens once the limit is reached. If your needs require a short output length, you’ll also
+possibly need to engineer your prompt to accommodate.
+Output length restriction is especially important for some LLM prompting techniques, like
+ReAct, where the LLM will keep emitting useless tokens after the response you wan",1,"Hiểu được tác động của output length nhưng bị cắt cụt giữa từ ""wan"" ở cuối câu ví dụ ReAct."
+google-prompt-engineering-2025:p009,9,LLM Output Configuration,B,google-prompt-engineering-2025_B_p009_c0000_980925ed5d,680,"Reducing the output length of the LLM doesn’t cause the LLM to become more stylistically
+or textually succinct in the output it creates, it just causes the LLM to stop predicting more
+tokens once the limit is reached. If your needs require a short output length, you’ll also
+possibly need to engineer your prompt to accommodate.
+Output length restriction is especially important for some LLM prompting techniques, like
+ReAct, where the LLM will keep emitting useless tokens after the response you want.
+Be aware, generating more tokens requires more computation from the LLM, leading
+to higher energy consumption and potentially slower response times, which leads to
+higher costs.",2,"Trọn vẹn cả 3 đoạn giải thích về giới hạn độ dài đầu ra, kỹ thuật ReAct và chi phí tính toán."
+google-prompt-engineering-2025:p009,9,LLM Output Configuration,C,google-prompt-engineering-2025_C_p009_c0000_980925ed5d,680,"Reducing the output length of the LLM doesn’t cause the LLM to become more stylistically
+or textually succinct in the output it creates, it just causes the LLM to stop predicting more
+tokens once the limit is reached. If your needs require a short output length, you’ll also
+possibly need to engineer your prompt to accommodate.
+Output length restriction is especially important for some LLM prompting techniques, like
+ReAct, where the LLM will keep emitting useless tokens after the response you want.
+Be aware, generating more tokens requires more computation from the LLM, leading
+to higher energy consumption and potentially slower response times, which leads to
+higher costs.",2,"Trọn vẹn cả 3 đoạn giải thích về giới hạn độ dài đầu ra, kỹ thuật ReAct và chi phí tính toán."
+google-prompt-engineering-2025:p010,10,LLM Output Configuration,A,google-prompt-engineering-2025_A_p010_c0000_d895b9f5c1,500,"deterministic: the highest probability token is always selected (though note that if two tokens
+have the same highest predicted probability, depending on how tiebreaking is implemented
+you may not always get the same output with temperature 0).
+Temperatures close to the max tend to create more random output. And as temperature gets
+higher and higher, all tokens become equally likely to be the next predicted token.
+The Gemini temperature control can be understood in a similar way to the softmax f",0,"Bị cắt cả hai đầu: mở đầu lửng lơ giữa câu (""deterministic:"") thiếu chủ thể temperature = 0, cuối đoạn cụt giữa từ ""softmax f""."
+google-prompt-engineering-2025:p010,10,LLM Output Configuration,B,google-prompt-engineering-2025_B_p010_c0000_ab2b334519,779,"deterministic: the highest probability token is always selected (though note that if two tokens
+have the same highest predicted probability, depending on how tiebreaking is implemented
+you may not always get the same output with temperature 0).
+Temperatures close to the max tend to create more random output. And as temperature gets
+higher and higher, all tokens become equally likely to be the next predicted token.
+The Gemini temperature control can be understood in a similar way to the softmax function
+used in machine learning. A low temperature setting mirrors a low softmax temperature (T),
+emphasizing a single, preferred temperature with high certainty. A higher Gemini temperature
+setting is like a high softmax temperature, making a wider range of temperatures around",1,"Đủ ý giải thích temperature và hàm softmax nên hiểu được một phần, nhưng thiếu đầu câu ở đầu trang và ngắt trước khi hết câu cuối."
+google-prompt-engineering-2025:p010,10,LLM Output Configuration,C,google-prompt-engineering-2025_C_p010_c0000_ab2b334519,779,"deterministic: the highest probability token is always selected (though note that if two tokens
+have the same highest predicted probability, depending on how tiebreaking is implemented
+you may not always get the same output with temperature 0).
+Temperatures close to the max tend to create more random output. And as temperature gets
+higher and higher, all tokens become equally likely to be the next predicted token.
+The Gemini temperature control can be understood in a similar way to the softmax function
+used in machine learning. A low temperature setting mirrors a low softmax temperature (T),
+emphasizing a single, preferred temperature with high certainty. A higher Gemini temperature
+setting is like a high softmax temperature, making a wider range of temperatures around",1,"Đủ ý giải thích temperature và hàm softmax nên hiểu được một phần, nhưng thiếu đầu câu ở đầu trang và ngắt trước khi hết câu cuối."
+google-prompt-engineering-2025:p011,11,LLM Output Configuration,A,google-prompt-engineering-2025_A_p011_c0000_5373eb9c1a,499,"• Top-P sampling selects the top tokens whose cumulative probability does not exceed
+a certain value (P). Values for P range from 0 (greedy decoding) to 1 (all tokens in the
+LLM’s vocabulary).
+The best way to choose between top-K and top-P is to experiment with both methods (or
+both together) and see which one produces the results you are looking for.
+Putting it all together
+Choosing between top-K, top-P, temperature, and the number of tokens to generate,
+depends on the specific application and",1,"Giữ trọn ý về Top-P sampling nhưng dính thêm tiêu đề mục mới ""Putting it all together"" và bị cắt giữa câu ở cuối."
+google-prompt-engineering-2025:p011,11,LLM Output Configuration,B,google-prompt-engineering-2025_B_p011_c0000_e7c93ef526,353,"• Top-P sampling selects the top tokens whose cumulative probability does not exceed
+a certain value (P). Values for P range from 0 (greedy decoding) to 1 (all tokens in the
+LLM’s vocabulary).
+The best way to choose between top-K and top-P is to experiment with both methods (or
+both together) and see which one produces the results you are looking for.",2,"Tách ranh giới chuẩn ngay trước tiêu đề mục mới, giữ trọn vẹn toàn bộ giải thích về Top-P sampling."
+google-prompt-engineering-2025:p011,11,LLM Output Configuration,C,google-prompt-engineering-2025_C_p011_c0000_e7c93ef526,353,"• Top-P sampling selects the top tokens whose cumulative probability does not exceed
+a certain value (P). Values for P range from 0 (greedy decoding) to 1 (all tokens in the
+LLM’s vocabulary).
+The best way to choose between top-K and top-P is to experiment with both methods (or
+both together) and see which one produces the results you are looking for.",2,"Tách ranh giới chuẩn ngay trước tiêu đề mục mới, giữ trọn vẹn toàn bộ giải thích về Top-P sampling."
+google-prompt-engineering-2025:p012,12,LLM Output Configuration,A,google-prompt-engineering-2025_A_p012_c0000_771d879bba,500,"• If you set temperature to 0, top-K and top-P become irrelevant–the most probable
+token becomes the next token predicted. If you set temperature extremely high (above
+1–generally into the 10s), temperature becomes irrelevant and whatever tokens make
+it through the top-K and/or top-P criteria are then randomly sampled to choose a next
+predicted token.
+• If you set top-K to 1, temperature and top-P become irrelevant. Only one token passes the
+top-K criteria, and that token is the next predicted t",1,"Giữ trọn bullet đầu về temperature = 0 nhưng bị cắt giữa từ ""t"" ở bullet thứ hai về top-K."
+google-prompt-engineering-2025:p012,12,LLM Output Configuration,B,google-prompt-engineering-2025_B_p012_c0000_07634aa267,790,"• If you set temperature to 0, top-K and top-P become irrelevant–the most probable
+token becomes the next token predicted. If you set temperature extremely high (above
+1–generally into the 10s), temperature becomes irrelevant and whatever tokens make
+it through the top-K and/or top-P criteria are then randomly sampled to choose a next
+predicted token.
+• If you set top-K to 1, temperature and top-P become irrelevant. Only one token passes the
+top-K criteria, and that token is the next predicted token. If you set top-K extremely high,
+like to the size of the LLM’s vocabulary, any token with a nonzero probability of being the
+next token will meet the top-K criteria and none are selected out.
+• If you set top-P to 0 (or a very small value), most LLM sampling implementations will then",1,"Trọn vẹn 2 bullet đầu về temperature và top-K, nhưng bị ngắt giữa câu ở bullet thứ 3 về top-P do chạm trần 800 ký tự."
+google-prompt-engineering-2025:p012,12,LLM Output Configuration,C,google-prompt-engineering-2025_C_p012_c0000_07634aa267,790,"• If you set temperature to 0, top-K and top-P become irrelevant–the most probable
+token becomes the next token predicted. If you set temperature extremely high (above
+1–generally into the 10s), temperature becomes irrelevant and whatever tokens make
+it through the top-K and/or top-P criteria are then randomly sampled to choose a next
+predicted token.
+• If you set top-K to 1, temperature and top-P become irrelevant. Only one token passes the
+top-K criteria, and that token is the next predicted token. If you set top-K extremely high,
+like to the size of the LLM’s vocabulary, any token with a nonzero probability of being the
+next token will meet the top-K criteria and none are selected out.
+• If you set top-P to 0 (or a very small value), most LLM sampling implementations will then",1,"Trọn vẹn 2 bullet đầu về temperature và top-K, nhưng bị ngắt giữa câu ở bullet thứ 3 về top-P do chạm trần 800 ký tự."
+google-prompt-engineering-2025:p013,13,Prompting Techniques,A,google-prompt-engineering-2025_A_p013_c0000_b864ecf2fc,499,"top-p settings. This can occur at both low and high temperature settings, though for different
+reasons. At low temperatures, the model becomes overly deterministic, sticking rigidly to the
+highest probability path, which can lead to a loop if that path revisits previously generated
+text. Conversely, at high temperatures, the model's output becomes excessively random,
+increasing the probability that a randomly chosen word or phrase will, by chance, lead back
+to a prior state, creating a loop due",0,"Mở đầu cụt giữa câu (""top-p settings."") không rõ chủ thể đang nói về lỗi lặp từ, cuối đoạn lại ngắt giữa câu (""loop due"")."
+google-prompt-engineering-2025:p013,13,Prompting Techniques,B,google-prompt-engineering-2025_B_p013_c0000_5091ead7dd,741,"top-p settings. This can occur at both low and high temperature settings, though for different
+reasons. At low temperatures, the model becomes overly deterministic, sticking rigidly to the
+highest probability path, which can lead to a loop if that path revisits previously generated
+text. Conversely, at high temperatures, the model's output becomes excessively random,
+increasing the probability that a randomly chosen word or phrase will, by chance, lead back
+to a prior state, creating a loop due to the vast number of available options. In both cases,
+the model's sampling process gets ""stuck,"" resulting in monotonous and unhelpful output
+until the output window is filled. Solving this often requires careful tinkering with temperature",1,"Giải thích được cơ chế lặp ở nhiệt độ thấp/cao nên hiểu được một phần, nhưng thiếu chủ thể ở đầu trang và bị cắt ngang cuối câu."
+google-prompt-engineering-2025:p013,13,Prompting Techniques,C,google-prompt-engineering-2025_C_p013_c0000_5091ead7dd,741,"top-p settings. This can occur at both low and high temperature settings, though for different
+reasons. At low temperatures, the model becomes overly deterministic, sticking rigidly to the
+highest probability path, which can lead to a loop if that path revisits previously generated
+text. Conversely, at high temperatures, the model's output becomes excessively random,
+increasing the probability that a randomly chosen word or phrase will, by chance, lead back
+to a prior state, creating a loop due to the vast number of available options. In both cases,
+the model's sampling process gets ""stuck,"" resulting in monotonous and unhelpful output
+until the output window is filled. Solving this often requires careful tinkering with temperature",1,"Giải thích được cơ chế lặp ở nhiệt độ thấp/cao nên hiểu được một phần, nhưng thiếu chủ thể ở đầu trang và bị cắt ngang cuối câu."
+google-prompt-engineering-2025:p014,14,Prompting Techniques,A,google-prompt-engineering-2025_A_p014_c0000_ff367c4a65,500,"Let’s use Vertex AI Studio (for Language) in Vertex AI,6 which provides a playground to test
+prompts. In Table 1, you will see an example zero-shot prompt to classify movie reviews.
+The table format as used below is a great way of documenting prompts. Your prompts will
+likely go through many iterations before they end up in a codebase, so it’s important to keep
+track of your prompt engineering work in a disciplined, structured way. More on this table
+format, the importance of tracking prompt eng",1,"Hiểu được bối cảnh dùng Vertex AI Studio và bảng ghi chép prompt nhưng bị cắt giữa từ ""eng"" ở cuối."
+google-prompt-engineering-2025:p014,14,Prompting Techniques,B,google-prompt-engineering-2025_B_p014_c0000_74b6aafe71,737,"Let’s use Vertex AI Studio (for Language) in Vertex AI,6 which provides a playground to test
+prompts. In Table 1, you will see an example zero-shot prompt to classify movie reviews.
+The table format as used below is a great way of documenting prompts. Your prompts will
+likely go through many iterations before they end up in a codebase, so it’s important to keep
+track of your prompt engineering work in a disciplined, structured way. More on this table
+format, the importance of tracking prompt engineering work, and the prompt development
+process is in the Best Practices section later in this chapter (“Document the various prompt
+attempts”).
+The model temperature should be set to a low number, since no creativity is needed, and we",1,"Trọn vẹn 2 đoạn đầu về quy trình theo dõi prompt, nhưng dính thêm đầu câu của đoạn thứ 3 bị cắt lửng (""and we"")."
+google-prompt-engineering-2025:p014,14,Prompting Techniques,C,google-prompt-engineering-2025_C_p014_c0000_74b6aafe71,737,"Let’s use Vertex AI Studio (for Language) in Vertex AI,6 which provides a playground to test
+prompts. In Table 1, you will see an example zero-shot prompt to classify movie reviews.
+The table format as used below is a great way of documenting prompts. Your prompts will
+likely go through many iterations before they end up in a codebase, so it’s important to keep
+track of your prompt engineering work in a disciplined, structured way. More on this table
+format, the importance of tracking prompt engineering work, and the prompt development
+process is in the Best Practices section later in this chapter (“Document the various prompt
+attempts”).
+The model temperature should be set to a low number, since no creativity is needed, and we",1,"Trọn vẹn 2 đoạn đầu về quy trình theo dõi prompt, nhưng dính thêm đầu câu của đoạn thứ 3 bị cắt lửng (""and we"")."
+google-prompt-engineering-2025:p015,15,Prompting Techniques,A,google-prompt-engineering-2025_A_p015_c0000_62c315969a,500,"Name
+1_1_movie_classification
+Goal
+Classify movie reviews as positive, neutral or negative.
+Model
+gemini-pro
+Temperature
+0.1
+Token Limit
+5
+Top-K
+N/A
+Top-P
+1
+Prompt
+Classify movie reviews as POSITIVE, NEUTRAL or NEGATIVE.
+Review: ""Her"" is a disturbing study revealing the direction
+humanity is headed if AI is allowed to keep evolving,
+unchecked. I wish there were more movies like this masterpiece.
+Sentiment:
+Output
+POSITIVE
+Table 1. An example of zero-shot prompting
+When zero-shot doesn’t work, yo",2,"Bao trọn toàn bộ nội dung bảng ví dụ Table 1 từ đầu đến hết chú thích bảng nên tự hiểu trọn vẹn, chỉ dư mẩu chuyển ý ở cuối."
+google-prompt-engineering-2025:p015,15,Prompting Techniques,B,google-prompt-engineering-2025_B_p015_c0000_9d5690b64e,156,"Name
+1_1_movie_classification
+Goal
+Classify movie reviews as positive, neutral or negative.
+Model
+gemini-pro
+Temperature
+0.1
+Token Limit
+5
+Top-K
+N/A
+Top-P
+1",0,"Chỉ lấy được phần thông số cấu hình đầu bảng (Name đến Top-P), bị cắt mất toàn bộ phần Prompt và Output cốt lõi của ví dụ nên không hiểu được."
+google-prompt-engineering-2025:p015,15,Prompting Techniques,C,google-prompt-engineering-2025_C_p015_c0000_9d5690b64e,156,"Name
+1_1_movie_classification
+Goal
+Classify movie reviews as positive, neutral or negative.
+Model
+gemini-pro
+Temperature
+0.1
+Token Limit
+5
+Top-K
+N/A
+Top-P
+1",0,"Chỉ lấy được phần thông số cấu hình đầu bảng (Name đến Top-P), bị cắt mất toàn bộ phần Prompt và Output cốt lõi của ví dụ nên không hiểu được."

@@ -45,3 +45,31 @@ Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **1
 | Cách nộp bài | [SUBMISSION.md](SUBMISSION.md) |
 
 [data/format-example.json](data/format-example.json) chỉ minh họa định dạng, không phải corpus đủ điều kiện. Phần xử lý và benchmark do bạn tự hiện thực; không bắt buộc xây chatbot.
+
+## 4. Cài đặt và tái lập pipeline thực nghiệm (Nguyễn Tấn Châu - 2A202603846)
+
+### Cài đặt môi trường (Python 3.12+)
+```powershell
+python -m pip install pymupdf chromadb sentence-transformers
+```
+
+### Chạy từng bước
+1. **Trích xuất và làm sạch PDF** (xuất `data/processed/pages.jsonl`, `data/manifest.json`, `results/extraction_log.json`):
+```powershell
+python src/extract_and_clean.py
+```
+
+2. **Kiểm tra xác thực bộ câu hỏi benchmark** (`benchmark/questions.json`):
+```powershell
+python src/verify_benchmark.py
+```
+
+3. **Ingest dữ liệu vào ChromaDB với `BAAI/bge-m3` cho 3 chiến lược A, B, C** (xuất `results/ingestion_stats.json` và cập nhật `artifacts/experiment_log.csv`):
+```powershell
+python src/ingest.py
+```
+
+4. **Đánh giá truy xuất và xuất trace + template chấm thủ công** (xuất `results/traces/trace_*.json`, `results/metrics_summary.json`, `results/manual_audit/*.csv`):
+```powershell
+python src/evaluate.py
+```

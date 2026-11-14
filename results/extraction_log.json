@@ -1,0 +1,73 @@
+{
+  "source_path": "data/raw/Prompt Engineering.pdf",
+  "total_physical_pages": 68,
+  "extracted_pages_count": 62,
+  "excluded_pages_count": 6,
+  "margin_clip_top_ratio": 0.09,
+  "margin_clip_bottom_ratio": 0.1,
+  "excluded_pages": [
+    {
+      "page": 1,
+      "reason": "Trang bìa (Cover page)",
+      "char_count": 39,
+      "preview": "Prompt Engineering Author: Lee Boonstra"
+    },
+    {
+      "page": 2,
+      "reason": "Trang tác giả và lời cảm ơn (Acknowledgements)",
+      "char_count": 245,
+      "preview": "Acknowledgements Content contributors Michael Sherman Yuan Cao Erick Armbrust Anant Nawalgaria Antonio Gulli Simone Camm"
+    },
+    {
+      "page": 3,
+      "reason": "Trang mục lục (Table of Contents)",
+      "char_count": 359,
+      "preview": "Introduction 6 Prompt engineering 7 LLM output configuration 8 Output length 8 Sampling controls 9 Temperature 9 Top-K a"
+    },
+    {
+      "page": 4,
+      "reason": "Trang mục lục (Table of Contents)",
+      "char_count": 716,
+      "preview": "Step-back prompting 25 Chain of Thought (CoT) 29 Self-consistency 32 Tree of Thoughts (ToT) 36 ReAct (reason & act) 37 A"
+    },
+    {
+      "page": 5,
+      "reason": "Trang mục lục (Table of Contents)",
+      "char_count": 174,
+      "preview": "JSON Repair 61 Working with Schemas 62 Experiment together with other prompt engineers 63 CoT Best practices 64 Document"
+    },
+    {
+      "page": 68,
+      "reason": "Trang tài liệu tham khảo / ghi chú cuối (Endnotes)",
+      "char_count": 2273,
+      "preview": "Endnotes 1. Google, 2023, Gemini by Google. Available at: https://gemini.google.com. 2. Google, 2024, Gemini for Google "
+    }
+  ],
+  "section_summary": {
+    "Introduction": {
+      "pages": 2,
+      "char_count": 2443
+    },
+    "LLM Output Configuration": {
+      "pages": 5,
+      "char_count": 7610
+    },
+    "Prompting Techniques": {
+      "pages": 29,
+      "char_count": 38637
+    },
+    "Code Prompting": {
+      "pages": 12,
+      "char_count": 12402
+    },
+    "Best Practices": {
+      "pages": 12,
+      "char_count": 15343
+    },
+    "Summary": {
+      "pages": 2,
+      "char_count": 901
+    }
+  },
+  "errors": []
+}
